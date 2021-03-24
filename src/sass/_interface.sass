@@ -36,4 +36,23 @@
         padding-top: 18px
         padding-bottom: 18px
         vertical-align: middle
-        
+.slider-arrow
+    position: absolute
+    top: 0
+    z-index: 99
+    height: 100%
+    width: 22px
+    &_prod
+        border: 1px solid $active-color
+    &:hover
+        cursor: 
+    &_right
+        right: 0
+        background: url(../img/next1.png) center no-repeat
+        &:hover
+            background: $active-color url(../img/next.png) center no-repeat
+    &_left
+        left: 0
+        background: url(../img/back1.png) center no-repeat
+        &:hover
+            background: $active-color url(../img/back.png) center no-repeat
