@@ -488,13 +488,18 @@ button:focus {
   overflow: hidden;
 }
 
+.production-slider_top img {
+  min-width: 100%;
+}
+
 .production-slider_bottom {
-  padding-left: 30px;
+  padding-left: 24px;
   padding-right: 30px;
   height: 78px;
   overflow-y: hidden;
 }
 
 .production-slider_bottom img {
+  min-width: 95%;
   margin: 0 6px;
 }
