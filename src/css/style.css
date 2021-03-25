@@ -477,6 +477,14 @@ button:focus {
   justify-content: center;
 }
 
+.clients-block1 {
+  filter: grayscale(100%);
+}
+
+.clients-block1:hover {
+  filter: grayscale(0%);
+}
+
 .production {
   padding-top: 87px;
   padding-bottom: 90px;
