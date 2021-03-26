@@ -510,4 +510,9 @@ button:focus {
 .production-slider_bottom img {
   min-width: 95%;
   margin: 0 6px;
+  filter: brightness(50%);
+}
+
+.slider__item.slick-current {
+  filter: brightness(170%);
 }
