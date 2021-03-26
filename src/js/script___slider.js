@@ -14,3 +14,9 @@ $(document).ready(function() {
         asNavFor: '.production-slider_top'
     });
 });
+$('.slider').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});

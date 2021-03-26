@@ -2,7 +2,7 @@
     position: relative
     padding-top: 65px
     padding-bottom: 60px
-    background: #373737 url(..\img\main\main-bg.jpg) center no-repeat
+    // background: #373737 url(..\img\main\main-bg.jpg) center no-repeat
     background-size: cover
     color: $text-color-light
     z-index: 1
@@ -44,6 +44,10 @@
         &__form
             padding: 30px 27px
             background-color: rgba(255, 255, 255, 0.2) 
+
+#slid2
+        // background: #373737 url(..\img\main\main-bg2.jpg) center no-repeat
+        background-size: cover
 .form
     display: flex
     margin-bottom: 12px
@@ -68,3 +72,13 @@
     &-small
         font-size: 14px
         font-weight: 300
+.slick-dots
+    bottom: 20px
+    li
+        button
+            border-radius: 50%
+            background: white
+            &::before
+                top: 1px
+.slick-dotted.slick-slider
+    margin-bottom: 0px
