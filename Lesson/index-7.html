@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы в Html</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- создание таблиццы -->
+
+    <table>
+        <!-- Подпись (заголовок) таблицы -->
+        <caption>Это таблица номер 1</caption>
+        <!-- новая строка таблицы tr (table row)-->
+        <thead>
+            <tr>
+                <!-- Заголовок (table header) -->
+                <th>заголовок1 </th>
+                <th>заголовок2 </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!-- Ячейки таблицы -->
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+            </tr>
+            <tr>
+                <!-- Ячейки таблицы -->
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+            </tr>
+            <tr>
+                <!-- Ячейки таблицы -->
+                <td>Ячейка1</td>
+                <td>Ячейка2</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <!-- Ячейки таблицы -->
+                <td>Итого </td>
+                <td>Ячейка foot</td>
+            </tr>
+        </tfoot>
+
+        <td rowspan="3"></td><!--  объединение ячеек по высоте -->
+        <td colspan="3"></td> <!-- объединение ячеек по горизонтали -->
+    </table>
+</body>
+
+</html>
