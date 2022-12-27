@@ -1,0 +1,19 @@
+/* h1{
+    font-size: 22px;
+    color: red;
+}
+p{
+    color: rgb(164, 164, 196);
+} */
+.txt{
+    text-decoration: line-through;
+}
+
+.lorem-txt{
+    font-weight: bold;
+    color:blueviolet
+}
+.lorem-txt-big{
+    font-size: 20px;
+    color: black;
+}

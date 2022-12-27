@@ -1,0 +1,28 @@
+#anotation{
+    text-indent: 40px;
+    font-style: italic;
+    color: rebeccapurple;
+}
+
+#chapter1 p{
+    text-indent: 40px;
+}
+
+#chapter2 p{
+    text-indent: 40px;
+}
+#chapter3 p {
+   text-indent: 40px;
+}
+
+#table-contents{
+    position: fixed;
+    left: 50%;
+    right: 0%;
+    top: 0%;
+    background-color: rgba(228, 250, 250, 0.917);
+    border: 1px solid black;   
+}
+#table-contents h2{
+    padding-left: 25%;
+}
