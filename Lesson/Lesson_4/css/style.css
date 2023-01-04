@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.box {
+    /* display: block; */
+/* display: inline-block; */
+    /*Ширина*/
+    width: 300px;
+    /*Высота*/
+    height: 300px;
+    /*Фоновый цвет*/
+    background-color: red;
+    /*Внутренние отступы*/
+    /* padding-left: 20px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 15px; */
+    /* padding: 10px 20px 15px 25px; */
+    padding: 10px 20px;
+    /*Рамка*/
+    /* border-color: black;
+    border-width: 5px 10px 15px 25px;
+    border-style: solid; */
+    
+    /*короткая запись*/
+    border: solid 5px black;
+
+    /*Внешние отступы*/
+    margin: 10px;
+    
+}
+
+.box-2{
+margin-top: 40px;  /*схлопывание отступов*/
+/* margin-left: -40px; */
+}
+
+.link{
+    background-color: grey;
+    padding: 10px;
+}
+button{
+    display: inline-block;
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+}
