@@ -1,0 +1,17 @@
+body{
+    font-family: Tahoma;
+}
+.container{
+    text-align: center;
+    
+}
+.advantage-title{ 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24pt;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+
+
