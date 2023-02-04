@@ -3,20 +3,14 @@ body {
     font-family: 'Tahoma', sans-serif;
     color: black;
 }
+img {
+    max-width: 100%;
+}
 .header {
     padding-top: 77px;
     padding-bottom: 96px;
 }
-.container {
-}
-.row {
-}
-.col-5 {
-}
-.col-7 {
-}
-.header-text {
-}
+
 .header-text_title {
     margin-bottom: 15px;
     font-size: 48px;
@@ -40,9 +34,8 @@ body {
     font-weight: 400;
     
 }
-.header-text_buttons {
-}
 .button {
+    margin-bottom: 20px;
     border: 3px solid transparent;
     border-radius: 5px;
     background-color: #f05a22;
@@ -56,4 +49,22 @@ body {
     background-color: transparent;
     border: 3px solid #f05a22;
     color:#f05a22;
+}
+.features {
+    background-color: #f2f2f2;
+    padding-top: 89px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.section-title {
+    margin-bottom: 91px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.features__img {
+    min-height: 55px;
+}
+.features__text {
+    font-size: 18px;
+    font-weight: 400;
 }
