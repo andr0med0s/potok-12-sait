@@ -12,7 +12,6 @@
 }
 .footer a {
   color: #666666;
-  text-decoration: none;
 }
 .footer a:hover {
   color: #fff;
@@ -31,13 +30,16 @@
 .footer ul li {
   line-height: 32px;
 }
-.footer-contacts, .footer-social-links {
+.footer-contacts {
   text-align: right;
 }
 .footer-contacts_phone {
   font-weight: 400;
   font-size: 20px;
   color: #009adf;
+}
+.footer-social-links {
+  text-align: right;
 }
 .footer-social-links li {
   display: inline-block;
@@ -51,10 +53,9 @@
   border-radius: 50%;
   line-height: 42px;
   margin-left: 10px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .footer-social-links li a:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: #131313;
-}
+}/*# sourceMappingURL=homework.css.map */
