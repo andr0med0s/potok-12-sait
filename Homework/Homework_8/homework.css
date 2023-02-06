@@ -4,9 +4,6 @@
   padding: 59px 0;
   color: #666666;
 }
-.footer-policy-link {
-  font-size: 12px;
-}
 .footer p {
   margin-bottom: 14px;
 }
@@ -30,14 +27,21 @@
 .footer ul li {
   line-height: 32px;
 }
+
+.footer-policy-link {
+  font-size: 12px;
+}
+
 .footer-contacts {
   text-align: right;
 }
+
 .footer-contacts_phone {
   font-weight: 400;
   font-size: 20px;
   color: #009adf;
 }
+
 .footer-social-links {
   text-align: right;
 }
@@ -54,8 +58,4 @@
   line-height: 42px;
   margin-left: 10px;
   transition: all 0.2s;
-}
-.footer-social-links li a:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #131313;
 }/*# sourceMappingURL=homework.css.map */
