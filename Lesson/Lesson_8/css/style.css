@@ -1,0 +1,28 @@
+.header {
+    width: 80%;
+    margin: auto;
+}
+
+/* .header__title {
+    color: #fb8c00;
+}
+
+.header__text {
+    color: #e65100;
+    margin-bottom: 30px;
+} */
+
+.header__button {
+    background-color: #fb8c00;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 20px #ffa726;
+}
+.line {
+    height: 1px;
+    widows: 50%;
+    background-color: #fb8c00;
+}

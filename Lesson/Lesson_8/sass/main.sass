@@ -1,0 +1,38 @@
+// .header
+//     h1
+//         font-size: 20px
+//     p
+//         font-size: 14px
+//----------------------------------------------
+// .header
+//     background-color: #fefefe
+//     &__title
+//         font:
+//             size: 20px
+//             weight: bold
+//             style: italic
+//     &__text
+//         font-style: italic
+//-------------------------------------------
+// $size: 10px
+
+// .header
+//     margin-top: (2*$size - 5px) / 2
+//---------------------------------------------
+// $color: #fb8c00
+$color: #ba68c8
+
+.header
+    &__title
+        color: $color
+    &__text
+        color: darken($color, 10)
+
+    &__button
+        border: none
+        padding: 10px
+        border-radius: 5px
+        color: #fff
+        font-size: 18px
+        background-color: $color
+        box-shadow: 1px 5px 20px lighten($color, 10)
