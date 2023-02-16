@@ -1,0 +1,36 @@
+.block 
+  display: flex 
+  // justify-content: flex-start // по умолчанию
+  // justify-content: flex-end 
+  border: 1px solid #000
+  // justify-content: space-around // одинаковые отступы у элементов внутри блока
+  justify-content: space-between // первый и последний элементы прилегают по краям к блоку расстояние остается одинаковым
+  // justify-content: center
+  // align-items: flex-start // вертикальное выравнивание внутри блока верх
+  // align-items: flex-end // вертикальное выравнивание внутри блока низ
+  align-items: center 
+  width: 90%
+  margin: auto
+  height: 150px
+  // flex-direction: row // по умолчанию
+  // flex-wrap: nowrap // по умолчанию нельзя выпадать за пределы родителя\блока
+  // flex-wrap: wrap // задается поведение элементов внутри блока
+  // flex-wrap: wrap-reverse 
+  // flex-direction: column
+  // flex-direction: row-reverse // осчет элементов с конца блока (с права)
+  //flex-direction: column-reverse //остчет элементов с низу блока
+
+.element
+  background-color: #6c6262
+  // width: 300px
+  color: #fff
+  padding: 10px
+  border: 1px solid #ca4343
+  &-3
+    align-self: flex-end
+//      order: -1 // меняется порядок элемент 3 станет первым
+//  flex-basis: 25% //базовая ширина
+  // &-3
+    
+  // flex-grow: 1 // элемент разрастется\займет все свободное пространство остальные по 10% работает в связке с flex-basis
+  // flex-shrink: 5 // элемент сужается на коэффицент 5 остальные увеличиваются  работает в связке с flex-basis

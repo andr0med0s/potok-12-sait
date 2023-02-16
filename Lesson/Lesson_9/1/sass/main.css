@@ -1,0 +1,19 @@
+.block {
+  display: flex;
+  border: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 150px;
+}
+
+.element {
+  background-color: #6c6262;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ca4343;
+}
+.element-3 {
+  align-self: flex-end;
+}/*# sourceMappingURL=main.css.map */
