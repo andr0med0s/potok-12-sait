@@ -1,0 +1,13 @@
+.container{
+  display: flex;
+  height: 500px;
+  background-color: rgba(0,0,0,0.1);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.item{
+  background-color: #ccc;
+  border: 1px solid red;
+  
+}

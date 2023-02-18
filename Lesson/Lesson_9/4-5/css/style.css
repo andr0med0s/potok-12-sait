@@ -1,0 +1,54 @@
+.container{
+  /*Делаем flex элемент*/
+  display: flex;
+  height: 500px;
+  background-color: rgba(0,0,0,.1);
+  /*Выравнивание контента по горизонтали*/
+  justify-content: space-around;
+  /*Выравнивание контента по вертикали*/
+  align-items: center;
+  /*Многострочность элементов flex-wrap*/
+  /*flex-wrap: nowrap; /*по умолчанию*/ 
+  flex-wrap:  wrap;  
+  /*Заполнение  контента по вертикали */
+  align-content: space-between;
+
+
+  /* flex-wrap: wrap; */
+  /*заполнение контента по вертикали*/
+  align-items: space-around;
+}
+.item {
+  background-color: #ccc;
+  border: 1px solid red;
+  
+  /*Базовая ширина элемента flex-basis*/
+  flex-basis: 100px;
+  text-align: center;
+  
+}
+.active {
+  /*Порядок элементов (свойство order)*/
+  /*order: 0; по умолчанию у всех значение 0*/ 
+  /*order: -1; /*элемент станет первым*/
+  order: 1; /* поместится в конец списка*/
+
+  /*Базовая ширина элемента flex-basis*/
+  /* flex-basis: 40%; */
+
+  /*Растяжение  элементов flex-grow*/
+  /* flex-grow: 1; */
+
+  /*Сужение   элементов flex-shrink*/
+  /* flex-shrink: 2; */
+
+   /*выравнивание отдельных элементов*/
+  align-self: flex-end;
+  text-align: center;
+  background-color: purple;
+  color: #fff;
+}
+
+.active-1{
+  align-self:flex-start;
+}
