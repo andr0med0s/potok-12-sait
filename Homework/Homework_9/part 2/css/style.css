@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Tahoma', sans-serif;
+    color: black;
+}
+img {
+    max-width: 100%;
+}
+.header {
+    padding-top: 77px;
+    padding-bottom: 96px;
+}
+
+.header-text_title {
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.header-text_subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.header-text_descr {
+    margin-bottom: 47px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.header-text_price {
+    margin-bottom: 53px;
+    color:#313131;
+    font-size: 48px;
+    font-weight: 400;
+    
+}
+.button {
+    margin-bottom: 20px;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background-color: #f05a22;
+    color: #fff;
+    padding: 22px 43px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+.button-o {
+    background-color: transparent;
+    border: 3px solid #f05a22;
+    color:#f05a22;
+}
+.features {
+    background-color: #f2f2f2;
+    padding-top: 89px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.section-title {
+    margin-bottom: 91px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.features__img {
+    min-height: 55px;
+}
+.features__text {
+    font-size: 18px;
+    font-weight: 400;
+}
+.who_bought{
+    padding-bottom:  110px;
+}
+.who_bought-block1__img {
+    max-height: 270px;
+}
+.who_bought-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
