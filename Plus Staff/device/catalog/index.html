@@ -104,126 +104,88 @@
       <div class="main-page__items">
 
         <div class="main-page__filter">
-
           <h3 class="filter-title">Фильтр:</h3>
-          <div class="filter-line"></div>
-          <!-- filter-line -->
 
-          <div class="filter-price">
-            <h3 class="filter-price__title">Стоимость</h3>
-            <div class="filter-price__slider">
-              <div class="price-range__slider">
-                <input type="range" min="0" max="5000" value="100" class="slider">
-              </div>
-              <div class="price-range__text">
-                <div class="range-text__from">
-                  <p class="range-from_txt">от</p>
-                  <input class="range-from_value" type="text" min="0" max="5000" value="0">
+          <form class="filter-options" action="" method="get">
+
+            <div class="filter-line"></div>
+            <!-- filter-line -->
+
+            <div class="filter-price">
+              <h3 class="filter-price__title">Стоимость</h3>
+              <div class="filter-price__slider">
+                <div class="price-range__slider">
+                  <input type="range" min="0" max="5000" value="100" class="slider">
                 </div>
-                <div class="range-text__to">
-                  <p class="range-to_txt">до</p>
-                  <input class="range-to_value" type="text" min="0" max="5000" value="0">
+                <div class="price-range__text">
+                  <div class="range-text__from">
+                    <p class="range-from_txt">от</p>
+                    <input class="range-from_value" type="text" min="0" max="5000" value="0">
+                  </div>
+                  <div class="range-text__to">
+                    <p class="range-to_txt">до</p>
+                    <input class="range-to_value" type="text" min="0" max="5000" value="0">
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- filter-price -->
-          <div class="filter-line"></div>
-          <!-- filter-line -->
+            <!-- filter-price -->
 
-          <div class="filter-color">
-            <h3 class="filter-color__title">Цвет</h3>
-            <div class="filter-color__checkbox">
-              <div class="color-checkbox__1">
-                <label for="input">
-                  <input type="checkbox" name="" value="black" class="checkbox-frame">
-                  <div class="checkbox-txt">
-                    <span class="checkbox-txt__1">
-                      Черный
-                    </span>
-                  </div>
-                </label>
-              </div>
-              <!-- color-checkbox__1 -->
-              <div class="color-checkbox__2">
-                <label for="input">
-                  <input type="checkbox" name="" value="white" class="checkbox-frame">
-                  <div class="checkbox-txt">
-                    <span class="checkbox-txt__2">
-                      Белый
-                    </span>
-                  </div>
-                </label>
-              </div>
-              <!-- color-checkbox__2 -->
-              <div class="color-checkbox__3">
-                <label for="input">
-                  <input type="checkbox" name="" value="blue" class="checkbox-frame">
-                  <div class="checkbox-txt">
-                    <span class="checkbox-txt__3">
-                      Синий
-                    </span>
-                  </div>
-                </label>
-              </div>
-              <!-- color-checkbox__3 -->
-              <div class="color-checkbox__4">
-                <label for="input">
-                  <input type="checkbox" name="" value="red" class="checkbox-frame">
-                  <div class="checkbox-txt">
-                    <span class="checkbox-txt__4">
-                      Красный
-                    </span>
-                  </div>
-                </label>
-              </div>
-              <!-- color-checkbox__4 -->
-              <div class="color-checkbox__5">
-                <label for="input">
-                  <input type="checkbox" name="" value="pink" class="checkbox-frame">
-                  <div class="checkbox-txt">
-                    <span class="checkbox-txt__5">
-                      Розовый
-                    </span>
-                  </div>
-                </label>
-              </div>
-              <!-- color-checkbox__5 -->
-            </div>
-            <!-- filter-color__checkbox -->
-          </div>
-          <!-- filter-color -->
-          <div class="filter-line"></div>
-          <!-- filter-line -->
+            <div class="filter-line"></div>
+            <!-- filter-line -->
 
-          <div class="filter-bluetooth">
-            <h3 class="filter-bluetooth__title">Цвет</h3>
-            <div class="filter-bluetooth__yes">
-              <label for="input">
-                <input type="radio" name="" value="black" class="radio-frame">
-                <div class="radio-txt">
-                  <span class="radio-txt__yes">
-                    Есть
-                  </span>
-                </div>
-              </label>
-            </div>
-            <div class="filter-bluetooth__no">
-              <label for="input">
-                <input type="radio" name="" value="black" class="radio-frame">
-                <div class="radio-txt">
-                  <span class="radio-txt__no">
-                    Нет
-                  </span>
-                </div>
-              </label>
-            </div>
-          </div>
-          <!-- filter-bluetooth -->
+            <fieldset class="filter-color">
+              <legend>
+                <h2 class="filter-color__title">Цвет</h2>
+              </legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="check1" name="color" value="black" class="checkbox-frame">
+                  <label for="check1">Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="check2" name="color" value="black" class="checkbox-frame">
+                  <label for="check2">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="check3" name="color" value="black" class="checkbox-frame">
+                  <label for="check3">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="check4" name="color" value="black" class="checkbox-frame">
+                  <label for="check4">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="check5" name="color" value="black" class="checkbox-frame">
+                  <label for="check5">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- filter-color -->
 
-          <div class="filter-button">
-            <button class="filter-apply" role="filter-submit">Показать</button>
-          </div>
+            <div class="filter-line"></div>
+            <!-- filter-line -->
+
+            <fieldset class="filter-bluetooth">
+              <legend>
+                <h3 class="filter-bluetooth__title">Цвет</h3>
+              </legend>
+              <ul>
+                <li>
+                  <input type="radio" id="check6" name="bluetooth" value="yes" class="radio-frame">
+                  <label for="check6">Есть</label>
+                </li>
+                <li>
+                  <input type="radio" id="check7" name="bluetooth" value="no" class="radio-frame">
+                  <label for="check7">Нет</label>
+                </li>
+              </ul>
+            </fieldset>
+            <!-- filter-bluetooth -->
+
+            <p><input type="submit" value="Показать"></p>
+          </form>
+          <!-- filter-options -->
         </div>
         <!-- main-page__filter -->
 
@@ -251,51 +213,46 @@
 
         <div class="main-page__boxes">
           <div class="box-1">
-            <figure>
-              <div class="box-1__img">
-                <img src="" width="360" height="380" alt="">
-              </div>
-              <figcaption>
-                <p class="box-1__txt">Любительская селфи-палка</p>
-                <p><span class="box-1__price">500</span> руб.</p>
-              </figcaption>
-            </figure>
+            <div class="box-1__img">
+              <img src="" width="360" height="380" alt="">
+            </div>
+
+            <h2 class="box-1__txt">Любительская селфи-палка</h2>
+            <span class="box-1__price">500 руб.</span>
+
           </div>
           <!-- box-1 -->
           <div class="box-2">
-            <figure>
-              <div class="box-2__img">
-                <img src="" width="360" height="380" alt="">
-              </div>
-              <figcaption>
-                <p class="box-2__txt">Проффесиональная селфи-палка</p>
-                <p><span class="box-2__price">1 500</span> руб.</p>
-              </figcaption>
-            </figure>
+
+            <div class="box-2__img">
+              <img src="" width="360" height="380" alt="">
+            </div>
+
+            <h2 class="box-2__txt">Проффесиональная селфи-палка</h2>
+            <span class="box-2__price">1 500 руб.</span>
+
           </div>
           <!-- box-2 -->
           <div class="box-3">
-            <figure>
-              <div class="box-3__img">
-                <img src="" width="360" height="380" alt="">
-              </div>
-              <figcaption>
-                <p class="box-3__txt">Непотопляемая селфи-палка</p>
-                <p><span class="box-3__price">2 500</span> руб.</p>
-              </figcaption>
-            </figure>
+
+            <div class="box-3__img">
+              <img src="" width="360" height="380" alt="">
+            </div>
+
+            <h2 class="box-3__txt">Непотопляемая селфи-палка</h2>
+            <span class="box-3__price">2 500 руб.</span>
+
           </div>
           <!-- box-3 -->
           <div class="box-4">
-            <figure>
-              <div class="box-4__img">
-                <img src="" width="360" height="380" alt="">
-              </div>
-              <figcaption>
-                <p class="box-4__txt">Селфи-палка "Следуй за мной"</p>
-                <p><span class="box-4__price">4 900</span> руб.</p>
-              </figcaption>
-            </figure>
+
+            <div class="box-4__img">
+              <img src="" width="360" height="380" alt="">
+            </div>
+
+            <h2 class="box-4__txt">Селфи-палка "Следуй за мной"</h2>
+            <span class="box-4__price">4 900 руб.</span>
+
           </div>
           <!-- box-4 -->
         </div>
@@ -399,20 +356,20 @@
 
       <div class="footer-bottom">
         <div class="footer-line"></div>
-          <!-- filter-line -->
-          <div class="footer-social">
-            <span class="social__icon">
-              <a href="#"> <img src="" alt="иконка Мы в фейсбук" > </a>
-              <a href="#"> <img src="" alt="иконка Мы в инстаграмм" > </a>
-              <a href="#"> <img src="" alt="иконка Мы в твиттер" > </a>
-            </span>
-          </div>
-          <!-- footer-social -->
-          <div class="logo-developers">
-            <span class="logo-developers__img">
-              <img src="" alt="Лого разработчика">
-            </span>
-          </div> 
+        <!-- filter-line -->
+        <div class="footer-social">
+          <span class="social__icon">
+            <a href="#"> <img src="" alt="иконка Мы в фейсбук"> </a>
+            <a href="#"> <img src="" alt="иконка Мы в инстаграмм"> </a>
+            <a href="#"> <img src="" alt="иконка Мы в твиттер"> </a>
+          </span>
+        </div>
+        <!-- footer-social -->
+        <div class="logo-developers">
+          <span class="logo-developers__img">
+            <img src="" alt="Лого разработчика">
+          </span>
+        </div>
       </div>
       <!-- footer-bottom -->
     </div>

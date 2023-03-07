@@ -1,0 +1,84 @@
+body{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+.container{
+  width: 500px;
+  margin: 50px auto;
+  background: none;
+  /* margin-left: auto;
+  margin-right: auto ; */
+}
+
+.outline{
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 3px solid black;
+  background: rgba(255, 255, 0, .2);
+}
+
+.column1, .column2, .column3{
+  min-height: 200px;
+}
+
+/*общая ширина колонки: 104 + 40 + 6 = 150*/
+/*
+.column1{ //если один класс у всех column
+  float: left;
+  width: 104px;
+  margin-right: 25px;
+} 
+.column2{
+  float: left;
+  width: 104px;
+  margin-right: 25px;
+} 
+.column3{
+  float: left;
+  width: 104px;
+   margin-right: 25px; //у каждого третьего обнулять margin 
+}             //ntn-child(n3) --- ?
+*/
+
+.column1{
+  float: left;
+  width: 104px;
+  margin-right: 25px;
+} 
+.column2{
+  float: left;
+  width: 104px;
+} 
+.column3{
+  float: right;
+  width: 104px;
+} 
+
+.footer{
+  clear: both;
+}
+
+
+/*
+.column1, .column2, .column3{
+  min-height: 100px;
+}
+.column1{
+  float: left;
+  width: 194px; /*ширина с учетом отступов ширина родителя 500px*/
+  /*с бордер-бокс проще оперировать шириной
+  width: 240px;
+  box-sizing: border-box;
+  
+}
+.column2{
+  float: right;
+  width: 194px;
+}
+.column3{
+clear: both;
+width: 194px;
+margin-left: auto;
+margin-right: auto;
+}
+*/
