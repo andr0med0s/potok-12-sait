@@ -1,0 +1,54 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 50px;
+}
+
+.container{ /*фикс блочно-строчных вместо удаления пробелов*/
+  font-size: 0px;
+}
+
+.achivment {
+  position: relative;
+
+  /* float: left; */
+
+   display: inline-block;  /* нет совместимости c float */
+  width: 180px;
+  min-height: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-left: 55px;
+
+  font-size: 16px;/*при фиксе блочно-строчных 
+            необходимо восстановить font-size у элементов*/
+
+  /*если display: inline-block;
+  явно задавать 
+  то vertical-align: top;*/
+  vertical-align: top;
+
+  /*если явно указано
+  vertical-align: baseline;
+  то такое поведение задуманно
+  */
+
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.achivment-badge {
+  position: absolute;
+  left: 5px;
+
+  width: 44px;
+  height: 44px;
+
+  background: #0099ff;
+  border: 3px solid #cccccc;
+  border-radius: 4px;
+}
+
+.achivment-title {
+  margin-left: 10px;
+}
