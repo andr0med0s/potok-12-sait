@@ -1,0 +1,57 @@
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.main-header {
+  /*Только для оформления сетки*/
+  min-height: 70px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  /*Только для оформления сетки*/
+  min-height: 70px;
+}
+
+.main-navigation {
+  width: 700px;
+
+  /*Только для оформления сетки*/
+  min-height: 70px;
+}
+
+.user-block {
+  width: 140px;
+
+  /*Только для оформления сетки*/
+  min-height: 70px;
+}
+
+.index-logo {}
+
+.features {}
+
+.features-item {}
+
+.index-content {}
+
+.index-content-left {}
+
+.index-content-right {}
+
+.main-footer {}
+
+.footer-contacts {}
+
+.footer-social {}
+
+.footer-copyright {}
