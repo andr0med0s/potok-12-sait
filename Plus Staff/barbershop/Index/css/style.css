@@ -93,6 +93,29 @@ body {
   /*только для оформления сетки*/
   min-height: 330px;
 }
+.appointment-form{
+
+}
+
+input[type=text]{
+  width: 140px;
+}
+input[type=tel]{
+  width: 140px;
+}
+
+.appointment-form-left{
+  float: left;
+
+  /* border: 1px solid red; */
+  width: 148px;
+}
+.appointment-form-rigth{
+  float: right;
+
+  /* border: 1px solid red; */
+  width: 148px;
+}
 
 .main-footer {
   margin-top: 65px;
