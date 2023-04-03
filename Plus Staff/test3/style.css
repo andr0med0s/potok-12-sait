@@ -1,0 +1,51 @@
+body{
+  font-family: Arial, sans-serif;
+}
+.achievments {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: flex-start; повторение поведения блочно-строчных */
+  align-items: stretch; /*по умолчанию*/
+  justify-content: space-between; /*если в работе карточки то лучше обычные margin использовать*/
+  margin: 0;
+  padding: 20px;
+
+  list-style: none;
+
+  background: #eeeeee;
+}
+.achievment {
+  /* flex-grow: 1; элементы съдают свободное пространство междуними и растягиваются */
+  flex-grow: 0;
+
+  position: relative;
+
+  width: 200px;
+  min-height: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  padding-left: 55px;
+
+  background: white;
+  border: 2px solid #cccccc;
+}
+.achievment::before{
+  content:"";
+
+  position: absolute;
+  left: 5px;
+
+  width: 44px;
+  height: 44px;
+
+  background-color: #0099ff;
+  background-image: linear-gradient(to right bottom, white, #0099ff);
+  border: 2px solid #cccccc;
+}
+.achievment-title {
+  margin: 0;
+  margin-left: 10px;
+
+  font-size: 16px;
+}
