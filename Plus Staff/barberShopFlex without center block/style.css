@@ -7,29 +7,19 @@ body {
 }
 
 .main-header {
-  border: 1px solid rgb(0, 229, 255);
-  margin-bottom: 60px;
-}
-
-.main-header-layout {
   display: flex;
-  justify-content: space-between;
-  /* justify-content: flex-start; варик */
-}
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 60px;
 
-.main-header-layout::before {
-  /* display: none; */
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-  border: 1px solid red;
+/*Только для оформления сетки*/
+  border: 1px solid rgb(0, 229, 255);
 }
 
 .main-navigation {
   width: 780px;
+  margin-left: auto;
+  margin-right: 20px;
 
   /*Только для оформления сетки*/
   min-height: 70px;
@@ -38,11 +28,17 @@ body {
 
 .user-block {
   width: 140px;
-  /* margin-left: auto; варик*/
+  margin-right: auto;
 
   /*Только для оформления сетки*/
   min-height: 70px;
   border: 1px solid rgb(51, 0, 255);
+}
+
+main{
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .index-logo {
@@ -59,7 +55,7 @@ body {
   /*display flex задается родителю колонок*/
   justify-content: space-between;
   border: 1px solid rgb(183, 128, 45);
-
+  margin-bottom: 80px;
 }
 
 .features::before {
@@ -133,9 +129,13 @@ input[type=tel]{
 }
 
 .main-footer {
+  display: flex;
+
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   border: 1px solid red;
 
@@ -151,6 +151,7 @@ input[type=tel]{
 
 .footer-contacts {
   width: 320px;
+  margin-left: auto;
   margin-right: 60px;
 
   /*Только для оформления сетки*/
@@ -169,7 +170,8 @@ input[type=tel]{
 
 .footer-copyright {
   width: 160px;
-  margin-left: auto;
+  margin-left: 220px;
+  margin-right: auto;
 
   /*Только для оформления сетки*/
   min-height: 90px;
