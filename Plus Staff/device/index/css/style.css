@@ -1,0 +1,231 @@
+html,
+body {
+  min-width: 1400px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+body {
+  background: #444444;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  border: 1px solid rgb(0, 8, 255);
+}
+
+.container {
+  background: #fff;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-top {
+  width: 360px;
+}
+
+.header-top__logo {
+}
+.header-top__middle {
+}
+
+.header-top__search {
+  float: left;
+  width: 360px;
+  margin-right: 240px;
+  border: 1px solid red;
+}
+
+.search-field {
+}
+.search-field__img {
+}
+
+.user-menu {
+  float: left;
+  width: 160px;
+  border: 1px solid red;
+}
+
+.user-profile__btn {
+}
+.user-profile__logout {
+}
+
+.buttons {
+  float: right;
+  width: 360px;
+  border: 1px solid red;
+}
+
+.compare-link {
+}
+.compare-link__img {
+}
+.compare-link__text {
+}
+.cart-button {
+}
+.buttons-link {
+}
+.buttons-link__img {
+}
+.buttons-link__text {
+}
+
+.header-bottom_nav {
+  border: 1px solid rgb(9, 255, 0);
+}
+
+.header-bottom__catalog {
+  float: left;
+  width: 360px;
+  margin-right: 240px;
+  border: 1px solid red;
+}
+
+.catalog-btn {
+}
+
+.header-bottom__delivery {
+  float: left;
+  width: 160px;
+  border: 1px solid red;
+}
+
+.delivery-btn {
+}
+
+.header-bottom__warranty {
+  float: left;
+  width: 140px;
+  border: 1px solid red;
+}
+.warranty-btn {
+}
+.header-bottom__contacts {
+  float: right;
+  width: 140px;
+  border: 1px solid red;
+}
+.contacts-btn {
+}
+.main-page {
+}
+
+.main-top{
+}
+
+.content-slider_left {
+  float: left;
+  width: 560px;
+  border: 1px solid red;
+}
+
+.slider-title_img {
+}
+
+.content-slider_right {
+  float: right;
+  width: 580px;
+  border: 1px solid red;
+}
+.slider-content_title {
+}
+.slider-title_left {
+}
+.slider-title_rigth {
+}
+.slider-title_main {
+}
+.slider-subtitle_main {
+}
+.slider-characteristics_goods {
+}
+
+.content-nav {
+  border: 1px solid red;
+}
+
+.nav-cards{
+  float: left;
+}
+
+.nav-cards_title{
+  float: left;
+}
+
+.terms-slider {
+}
+.terms-slider_left {
+}
+.terms-slider_right {
+}
+.logo-section {
+}
+.info-section {
+}
+.info-section_left {
+}
+.info-section_right {
+}
+.section-map {
+}
+.main-footer {
+}
+.main-footer__wrap {
+}
+.footer-top {
+}
+.footer-top__container {
+}
+.footer-top__logo {
+}
+.footer-top__wrapper {
+}
+.user-profile__login {
+}
+.user-profile__icon {
+}
+.user-profile__name {
+}
+.footer-middle {
+}
+.footer-middle__container {
+}
+.footer-middle__adress {
+}
+.footer-middle__wrapper {
+}
+.footer-middle_delivery {
+}
+.footer-bottom__warranty {
+}
+.footer-bottom__contacts {
+}
+.footer-middle__connection {
+}
+.tel-connect {
+}
+.tel-connect__number {
+}
+.footer-bottom {
+}
+.footer-line {
+}
+.footer-social {
+}
+.social__icon {
+}
+.logo-developers {
+}
+.logo-developers__img {
+}
