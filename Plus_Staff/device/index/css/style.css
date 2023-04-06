@@ -58,9 +58,9 @@ body {
 
 .user-profile__logout {}
 
-.buttons {
-  float: right;
-  width: 360px;
+.user-menu {
+  float: left;
+  width: 160px;
   border: 1px solid red;
 }
 
@@ -303,19 +303,50 @@ body {
 
 .footer-middle {}
 
-.footer-middle__container {}
+.footer-middle__adress {
+  float: left;
+  width: 200px;
+  border: 1px solid red;
+  
+}
 
-.footer-middle__adress {}
+.footer-middle__wrapper {
+  float: left;
+  width: 440px;
+  margin-left: 160px;
 
-.footer-middle__wrapper {}
+  border: 1px solid red;
+  
+}
 
-.footer-middle_delivery {}
+.footer-middle_delivery {
+  float: left;
+  width: 140px;
+  border: 1px solid rgb(224, 216, 216);
+}
 
-.footer-bottom__warranty {}
+.footer-bottom__warranty {
+  text-align: center;
+  float: left;
+  width: 120px;
+  
+  border: 1px solid rgb(224, 216, 216);
+}
 
-.footer-bottom__contacts {}
+.footer-bottom__contacts {
+  text-align: end;
+  float: right;
+  width: 120px;
+  border: 1px solid rgb(224, 216, 216);
+  
+}
 
-.footer-middle__connection {}
+.footer-middle__connection {
+  float: right;
+  width: 180px;
+  border: 1px solid red;
+  
+}
 
 .tel-connect {}
 
@@ -323,12 +354,39 @@ body {
 
 .footer-bottom {}
 
-.footer-line {}
+.footer-line {
+  float: left;
+  width: 80px;
+  border: 1px solid red;
+  
+}
 
-.footer-social {}
+.footer-social {
+  float: left;
+  width: 160px;
+  margin-left: 420px;
+  border: 1px solid red;
+}
 
-.social__icon {}
+.social__icon {
 
-.logo-developers {}
+}
+.soc_icon{
+  width: 36px;
+  float: left;
+  margin-right: 26px;
+}
+
+.soc_icon:last-child{
+  float: right;
+  margin-right: 0;
+}
+
+.logo-developers {
+  float: right;
+  width: 60px;
+  border: 1px solid red;
+  
+}
 
 .logo-developers__img {}
