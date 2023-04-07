@@ -7,7 +7,16 @@ body {
 }
 
 body {
-  background: #302f2f1b;
+  min-width: 960px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+
+  background: #000000 url("../img/bg.jpg") no-repeat center top;
 }
 
 .clearfix::after {
@@ -18,6 +27,10 @@ body {
 
 .main-header {
   margin-bottom: 60px;
+
+  color: #fff;
+
+  background-color: #000000;
 }
 
 .container {
@@ -29,17 +42,70 @@ body {
 .main-navigation {
   float: left;
   width: 780px;
+}
 
-  /*только для оформления сетки*/
-  min-height: 70px;
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  font-size: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-navigation a:hover{
+  background: #242424;
 }
 
 .user-block {
   float: right;
-  width: 140px;
+  max-width: 140px; 
+}
 
-  /*только для оформления сетки*/
-  min-height: 70px;
+.login {
+  position: relative;
+
+  display: inline-block;
+  padding: 25px 20px;
+  padding-left: 50px;
+
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login:hover{
+  background: #242424;
+}
+
+.login::before{
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+
+  width: 18px;
+  height: 18px;
+
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -2px -1px;
 }
 
 .index-logo {
@@ -93,24 +159,25 @@ body {
   /*только для оформления сетки*/
   min-height: 330px;
 }
-.appointment-form{
 
-}
+.appointment-form {}
 
-input[type=text]{
-  width: 140px;
-}
-input[type=tel]{
+input[type=text] {
   width: 140px;
 }
 
-.appointment-form-left{
+input[type=tel] {
+  width: 140px;
+}
+
+.appointment-form-left {
   float: left;
 
   /* border: 1px solid red; */
   width: 148px;
 }
-.appointment-form-rigth{
+
+.appointment-form-rigth {
   float: right;
 
   /* border: 1px solid red; */
@@ -127,7 +194,7 @@ input[type=tel]{
   float: left;
   width: 320px;
   margin-right: 60px;
-  
+
   /*только для оформления сетки*/
   min-height: 90px;
 }
