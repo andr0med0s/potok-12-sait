@@ -47,7 +47,7 @@ body {
 .main-navigation ul {
   margin: 0;
   padding: 0;
-  
+
   list-style: none;
   font-size: 0;
 }
@@ -68,13 +68,13 @@ body {
   text-decoration: none;
 }
 
-.main-navigation a:hover{
+.main-navigation a:hover {
   background: #242424;
 }
 
 .user-block {
   float: right;
-  max-width: 140px; 
+  max-width: 140px;
 }
 
 .login {
@@ -91,11 +91,11 @@ body {
   text-decoration: none;
 }
 
-.login:hover{
+.login:hover {
   background: #242424;
 }
 
-.login::before{
+.login::before {
   content: "";
   position: absolute;
   top: 28px;
@@ -104,8 +104,13 @@ body {
   width: 18px;
   height: 18px;
 
-  background: url("../img/sprite.png") no-repeat;
+  background: transparent url("../img/sprite.png") no-repeat;
   background-position: -2px -1px;
+  opacity: 0.3;
+}
+
+.login:hover:before {
+  opacity: 1;
 }
 
 .index-logo {
@@ -127,11 +132,11 @@ body {
 
 .features-item {
   float: left;
+  /* width: 290px; */
   width: 300px;
   margin-right: 20px;
 
-  /*только для оформления сетки*/
-  min-height: 175px;
+  text-align: center;
 }
 
 /*обнуляем margin для последнего блока*/
@@ -139,78 +144,289 @@ body {
   margin-right: 0;
 }
 
+.features-item p {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.features-name {
+  position: relative;
+
+  display: block;
+  margin-bottom: 30px;
+  padding-bottom: 35px;
+
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features-name::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
 .index-content {
-  padding: 50px 80px;
   margin-bottom: 35px;
+  padding: 50px 80px;
+
+  color: #000000;
+
+  background: url(../img/index-content-shadow.png) no-repeat center,
+    #f8f5f2 url(../img/content_bg_up.jpg);
 }
 
 .index-content-left {
   float: left;
   width: 380px;
-
-  /*только для оформления сетки*/
-  min-height: 330px;
 }
 
 .index-content-right {
   float: right;
   width: 300px;
-
-  /*только для оформления сетки*/
-  min-height: 330px;
 }
 
-.appointment-form {}
+.index-content-title {
+  margin: 0;
+  margin-bottom: 25px;
 
-input[type=text] {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-content p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.news-preview {
+  margin: 0;
+  padding: 0;
+  padding-right: 35px;
+
+  list-style: none;
+}
+
+.news-preview li {
+  margin-bottom: 25px;
+}
+
+.news-preview p {
+  margin-bottom: 0;
+}
+
+.news-preview time {
+  text-transform: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 33px;
+
+  /* font: inherit; */
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+  background: #000000;
+}
+
+.gallery {
+  position: relative;
+
+  height: 260px;
+}
+
+.gallery-content {
+  height: 164px;
+  margin: 0;
+
+  background-color: #cccccc;
+  border: 7px solid #fff;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery .btn {
+  position: absolute;
+  bottom: 0;
+
   width: 140px;
+  margin: 0;
 }
 
-input[type=tel] {
-  width: 140px;
+.gallary-prev {
+  left: 0;
 }
 
-.appointment-form-left {
+.gallary-next {
+  right: 0;
+}
+
+.appointment-form input {
+  /* font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif ;
+  color:#000000;
+  text-transform: uppercase; */
   float: left;
+  width: 106px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 7px 15px;
 
-  /* border: 1px solid red; */
-  width: 148px;
+  font: inherit;
+  color: inherit;
+  text-transform: inherit;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
 }
 
-.appointment-form-rigth {
-  float: right;
+.appointment-form input:focus {
+  border: 2px solid #663d15;
+}
 
-  /* border: 1px solid red; */
-  width: 148px;
+.appointment-form input:nth-child(2n) {
+  margin-right: 0;
+}
+
+.appointment-form .btn {
+  clear: both;
+  width: 100%;
 }
 
 .main-footer {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+
+  color: #fff;
+
+  background: #252525 url(../img/footer_bg.jpg);
 }
 
 .footer-contact {
   float: left;
   width: 320px;
   margin-right: 60px;
+}
 
-  /*только для оформления сетки*/
-  min-height: 90px;
+.footer-contact a {
+  color: #fff;
+}
+
+.footer-contact a:hover {
+  text-decoration: none;
 }
 
 .footer-social {
   float: left;
   width: 180 px;
 
-  /*только для оформления сетки*/
-  min-height: 90px;
+  text-align: center;
 }
 
 .footer-copyright {
   float: right;
-  width: 180px;
+  max-width: 180px;
+}
 
-  /*только для оформления сетки*/
-  min-height: 90px;
+.footer-social p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.social-btn {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  margin: 0 2px;
+
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+
+  background: #000000 url(../img/sprite.png) no-repeat center;
+
+  /* transition:  background-position 0.5s, background-color 0.5s ; */
+  transition:  background-color 0.5s ;
+}
+
+.social-btn:hover {
+  background-color: #fff;
+}
+
+.social-btn-vk {
+  background-position: 9px -60px;
+  ;
+}
+
+.social-btn-fb {
+  background-position: 9px -132px;
+}
+
+.social-btn-inst {
+  background-position: 9px -97px;
+}
+
+.social-btn-vk:hover {
+  background-position: 9px -167px;
+  ;
+}
+
+.social-btn-fb:hover {
+  background-position: 9px -202px;
+}
+
+.social-btn-inst:hover {
+  background-position: 9px -237px;
+}
+
+.footer-copyright p {
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-align: center;
+}
+
+.footer-copyright .btn{
+  margin-right: 0;
 }
