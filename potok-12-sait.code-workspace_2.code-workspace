@@ -1,0 +1,11 @@
+{
+    "folders": [
+		{
+			"name": "potok-12-sait",
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.port": 5502
+    }
+}
