@@ -742,52 +742,139 @@ a {
     width: 160px;
 }
 
-.promo-slider__advantages-descr--first {}
+.promo-slider__advantages-descr--first {
+    width: 160px;
+}
 
-.promo-slider__advantages-descr--second {}
+.promo-slider__advantages-descr--second {
+    width: 140px;
+}
 
-.promo-slider__advantages-descr--third {}
+.promo-slider__advantages-descr--third {
+    flex-grow: 1;
+    width: 160px;
+}
 
-.navigation__list-delivery__link {}
+.promo-slider__advantages--2 .promo-slider__advantages-col--first {
+    flex-grow: 1;
+}
 
-.navigation__list-warranty__link {}
+.product-categories {
+    padding-bottom: 18px;
+}
 
-.btn {}
+.product-categories__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
 
-.main-page {}
+.product-categories__item-wrap {
+    width: 160px;
+    height: 160px;
+    background-color: rgba(240, 197, 46, 0.5);
+}
 
-.main-footer {}
+.product-categories__item-wrap--vr {
+    padding-top: 52px;
+    padding-right: 32px;
+    padding-bottom: 53px;
+    padding-left: 31px;
+}
 
-.first-line {}
+.product-categories__item-wrap--vr img {
+    width: 97px;
+    height: 55px;
+}
 
-.footer-logo {}
+.product-categories__item-wrap--selfie {
+    padding-top: 41px;
+    padding-right: 36px;
+    padding-bottom: 2px;
+    padding-left: 38px;
+}
 
-.footer-user-navigation {}
+.product-categories__item-wrap--selfie+p {
+    width: 100px;
+}
 
-.login {}
+.product-categories__item-wrap--selfie img {
+    width: 86px;
+    height: 117px;
+}
 
-.login-link-footer {}
+.product-categories__item-wrap--cam {
+    padding-top: 38px;
+    padding-right: 40px;
+    padding-bottom: 35px;
+    padding-left: 49px;
+}
 
-.compare {}
+.product-categories__item-wrap--cam img {
+    width: 71px;
+    height: 87px;
+}
 
-.compare-link-footer {}
+.product-categories__item-wrap--fit {
+    padding-top: 50px;
+    padding-right: 25px;
+    padding-bottom: 45px;
+    padding-left: 28px;
+}
 
-.cart {}
+.product-categories__item-wrap--fit img {
+    width: 107px;
+    height: 65px;
+}
 
-.cart-link-footer {}
+.product-categories__item-wrap--watch {
+    padding-top: 32px;
+    padding-right: 49px;
+    padding-bottom: 30px;
+    padding-left: 55px;
+}
 
-.second-line {}
+.product-categories__item-wrap--watch img {
+    width: 56px;
+    height: 98px;
+}
 
-.footer-contact {}
+.product-categories__item-wrap--copter {
+    padding-top: 49px;
+    padding-right: 15px;
+    padding-bottom: 42px;
+    padding-left: 13px;
+}
 
-.footer-site-navigation {}
+.product-categories__item-wrap--copter img {
+    width: 132px;
+    height: 69px;
+}
 
-.footer-contact-phone {}
+.product-categories__item-link:hover .product-categories__item-wrap,
+.product-categories__item-link:focus .product-categories__item-wrap {
+    background-color: rgba(240, 197, 46, 1);
+    transition: all 0.2s linear;
+}
 
-.third-line {}
+.product-categories__item-link:active .product-categories__item-img,
+.product-categories__item-link:active .product-categories__item-name {
+    opacity: 0.3;
+}
 
-.footer-social {}
+.product-categories__item-name {
+    width: 160px;
+    margin: 0;
+    padding-top: 33px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #000000;
+}
 
-.social-button {}
 
-.html-academy {}
+/* от */
