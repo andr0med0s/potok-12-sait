@@ -43,8 +43,8 @@
                         <a class="main-nav__top-link  main-nav__top-link--compare" href="#">Сравнить</a>
                     </li>
                     <!-- compare -->
-                    <li class="main-nav__user-item  main-nav__user-item--cart">
-                        <a class="main-nav__user-link  main-nav__user-link--cart" href="#">Корзина</a>
+                    <li class="main-nav__top-item  main-nav__top-item--cart">
+                        <a class="main-nav__top-link  main-nav__top-link--cart" href="#">Корзина</a>
                     </li>
                     <!-- cart -->
 
@@ -388,98 +388,100 @@
 
     </main>
     <!-- main-page -->
-    <!-- ---------------------------------------------------------------------------------------------------- -->
+
     <footer class="main-footer">
-        <div class="main-footer container">
-            <nav class="footer-top clearfix">
+        <div class="container">
+            
+            <div class="main-footer__top-panel">
 
-                <div class="footer-top__logo">
-                    <img src="img/footer_logo.png" width="163" height="36" alt="Лого `Device`">
+                <div class="main-footer__logo">
+                    <a><img src="img/footer_logo.png" alt="DEVICE" width="164" height="36"></a>
                 </div>
-                <!-- footer-top__logo  -->
+                <!-- footer__logo -->
 
-                <div class="user-menu_btn">
-                    <div class="login_btn">
-                        <!-- <div class="user-profile__login">
-              <span class="user-profile__icon"><img src="img/header/user.svg" width="10" alt=""></span>
-              <span class="user-profile__name"></span>
-            </div> -->
-                        <div class="user-profile__btn">
-                            <button class="user-profile__logout">Войти</button>
-                        </div>
-                    </div>
+                <ul class="main-footer__top--list">
+                    <li class="main-footer__top-item  main-footer__top-item--login">
+                        <a class="main-footer__top-link  main-footer__top-link--login" href="#">Войти</a>
+                    </li>
+                    <!-- login -->
+                    <li class="main-footer__top-item  main-footer__top-item--compare">
+                        <a class="main-footer__top-link  main-footer__top-link--compare" href="#">Сравнить</a>
+                    </li>
+                    <!-- compare -->
+                    <li class="main-footer__top-item  main-footer__top-item--cart">
+                        <a class="main-footer__top-link  main-footer__top-link--cart" href="#">Корзина</a>
+                    </li>
+                    <!-- cart -->
+                </ul>
+                <!-- main-footer__top-list -->
 
-                    <a class="compare-link" href="#">
-                        <span class="compare-link__img"></span>
-                        <span class="compare-link__text">Сравнить</span>
-                    </a>
-
-                    <div class="cart-button">
-                        <a class="buttons-link" href="#">
-                            <span class="buttons-link__img"></span>
-                            <span class="buttons-link__text">Корзина</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- buttons -->
-
-            </nav>
-            <!-- footer-top-->
-
-            <div class="footer-middle clearfix">
-
-                <div class="footer-middle__adress">
-                    <address>
-                        г. Москва, ул. Строителей, 15
-                    </address>
-                </div>
-                <!-- footer-middle__adress -->
-
-                <div class="footer-middle__wrapper clearfix">
-                    <div class="footer-middle_delivery">
-                        <button class="delivery-btn">Доставка</button>
-                    </div>
-                    <!-- footer-bottom__delivery -->
-                    <div class="footer-bottom__warranty">
-                        <button class="warranty-btn">Гарантия</button>
-                    </div>
-                    <!-- footer-bottom__warranty -->
-                    <div class="footer-bottom__contacts">
-                        <button class="contacts-btn">Контакты</button>
-                    </div>
-                    <!-- footer-bottom__contacts -->
-                </div>
-                <!-- footer-middle__wrapper -->
-
-                <div class="footer-middle__connection">
-                    <span class="tel-connect">Тел.: </span>
-                    <a class="tel-connect__number" href="tel:+7(495)495-95-95">+7 (495) 495-95-95</a>
-                </div>
             </div>
-            <!-- footer-middle -->
+            <!-- main-footer__top-panel -->
 
-            <div class="footer-bottom clearfix">
-                <div class="footer-line">-----</div>
-                <!-- filter-line -->
-                <div class="footer-social">
-                    <span class="social__icon">
-                        <a class="soc_icon" href="#"> <img src="" width="36px" height="36px" alt=""> </a>
-                        <a class="soc_icon" href="#"> <img src="" width="36px" height="36px" alt=""> </a>
-                        <a class="soc_icon" href="#"> <img src="" width="36px" height="36px" alt=""> </a>
-                    </span>
+            <div class="main-footer__middle--info ">
+
+                <div class="main-footer__address">
+                    <span>г. Москва, ул. Строителей, 15</span>
                 </div>
-                <!-- footer-social -->
-                <div class="logo-developers">
-                    <span class="logo-developers__img">
-                        <img src="" alt="Лого разработчика">
-                    </span>
+                <!-- address -->
+
+                <div class="main-footer__services">
+                    <a class="main-footer__services-link  main-footer__services-link--delivery" href="#">Доставка</a>
+                    <a class="main-footer__services-link  main-footer__services-link--warranty" href="#">Гарантия</a>
+                    <a class="main-footer__services-link  main-footer__services-link--contacts" href="#">Контакты</a>
                 </div>
+                <!-- services -->
+
+                <div class="main-footer__phone">
+                    <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+                </div>
+                <!--phone -->
+
             </div>
-            <!-- footer-bottom -->
+            <!-- main-footer__middle--info -->
+
+            <div class="main-footer__bottom--links">
+
+                <div class="main-footer__links-wrap">
+
+                    <ul class="main-footer__social-list">
+                        
+                        <li class="main-footer__social-item">
+                            <a class="main-footer__social-link  main-footer__social-link--fb" href="#">
+                                <span class="visually-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <!-- Facebook -->
+                        <li class="main-footer__social-item">
+                            <a class="main-footer__social-link  main-footer__social-link--inst" href="#">
+                                <span class="visually-hidden">Instagram</span>
+                            </a>
+                        </li>
+                        <!-- Instagram -->
+                        <li class="main-footer__social-item">
+                            <a class="main-footer__social-link  main-footer__social-link--tw" href="#">
+                                <span class="visually-hidden">Twitter</span>
+                            </a>
+                        </li>
+                        <!-- Twitter -->
+
+                    </ul>
+                    <!-- social-list -->
+
+                    <div class="main-footer__copyright">
+                        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="HTML Academy" width="27" height="35"></a>
+                    </div>
+                    <!-- copyright -->
+                </div>
+                <!-- main-footer__links-wrap -->
+            </div>
+            <!-- main-footer__bottom--links -->
+
         </div>
-        <!-- main-footer__wrap -->
+        <!-- container -->
     </footer>
     <!-- main-footer -->
+
 </body>
 
 </html>
