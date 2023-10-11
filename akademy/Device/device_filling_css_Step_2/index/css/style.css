@@ -651,28 +651,178 @@ a {
     text-align: center;
 }
 
+.main-slider__img-wrap--01 img {
+    width: 384px;
+    height: 486px;
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+.main-slider__img-wrap--02 img {
+    width: 345px;
+    height: 485px;
+    margin-top: 12px;
+    margin-left: 16px;
+}
+
+
+.main-slider__img-wrap--03 img {
+    width: 526px;
+    height: 334px;
+    margin-top: 65px;
+    margin-left: 30px;
+}
+
+.main-slider__descr-wrap {
+    position: relative;
+    width: 560px;
+    padding-top: 78px;
+}
+
+.main-slider__descr-wrap::before {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100px;
+    height: 7px;
+    background-color: #ffffff;
+}
+
+.main-slider__descr-wrap::after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 50px;
+    z-index: -1;
+    font-weight: 800;
+    font-size: 179px;
+    line-height: 179px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #ffffff;
+}
+
+.main-slider__descr-wrap--1::after {
+    content: "01";
+}
+
+.main-slider__descr-wrap--2::after {
+    content: "02";
+    right: 52px;
+}
+
+.main-slider__descr-wrap--3::after {
+    content: "03";
+    right: 53px;
+}
+
+.main-slider__descr-wrap b {
+    display: block;
+    padding-bottom: 19px;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 56px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #000000;
+    letter-spacing: 0.01em;
+}
+
+.main-slider__descr-wrap p {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    letter-spacing: 0.01em;
+} 
+
+.main-slider__descr-wrap--1 p {
+    width: 490px;
+}
+
+.main-slider__descr-wrap--2 p, 
+.main-slider__descr-wrap--3 p {
+    width: 460px;
+}
+
+.main-slider__descr-wrap .btn {
+    width: 220px;
+    margin-top: 42px;
+    margin-bottom: 46px;
+    margin-left: 2px;
+    background: none;
+    border: none;
+}
+
+.main-slider__controls {
+    position: absolute;
+    right: 82px;
+    bottom: 253px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 78px;
+}
+
+.main-slider__control {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main-slider__control::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: none;
+    box-sizing: border-box;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.main-slider__input:focus~.main-slider__controls label {
+    outline: 1px dotted #212121;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.main-slider__input[id="main-control-1"]:checked~.main-slider__controls label[for="main-control-1"]::before,
+.main-slider__input[id="main-control-2"]:checked~.main-slider__controls label[for="main-control-2"]::before, 
+.main-slider__input[id="main-control-3"]:checked~.main-slider__controls label[for="main-control-3"]::before {
+    display: block;
+}
+
+.main-slider__input[id="main-control-1"]:checked~.main-slider__item--2,
+.main-slider__input[id="main-control-1"]:checked~.main-slider__item--3,
+.main-slider__input[id="main-control-2"]:checked~.main-slider__item--1,
+.main-slider__input[id="main-control-2"]:checked~.main-slider__item--3,
+.main-slider__input[id="main-control-3"]:checked~.main-slider__item--1,
+.main-slider__input[id="main-control-3"]:checked~.main-slider__item--2 {
+    display: none;
+}
+
+
 
 
 .main-nav__item {
 }
-
 .main-nav__link--delivery {
 }
 .main-nav__link--warranty {
 }
 .main-page {
 }
-.main-slider__input {
-}
-.main-slider__item--1 {
-}
 
-.main-slider__img-wrap--01 {
-}
-.main-slider__descr-wrap {
-}
-.main-slider__descr-wrap--1 {
-}
+
+
 .main-slider__advantages {
 }
 .main-slider__advantages--1 {
@@ -694,23 +844,17 @@ a {
 .main-slider__advantages-descr--third {
 }
 
-.main-slider__img-wrap--02 {
-}
-.main-slider__descr-wrap--2 {
-}
+
+
 .main-slider__advantages--2 {
 }
 
-.main-slider__img-wrap--03 {
-}
-.main-slider__descr-wrap--3 {
-}
+
+
 .main-slider__advantages--3 {
 }
-.main-slider__controls {
-}
-.main-slider__control {
-}
+
+
 .main-goods {
 }
 .main-goods__list {
