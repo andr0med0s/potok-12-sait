@@ -14,7 +14,7 @@ body {
 }
 
 .header {
-    padding: 50px 0;
+    padding: 50px;
     background: #eeeeee;
 }
 
@@ -23,7 +23,7 @@ body {
     width: 880px;
     height: 310px;
     margin: 0 auto;
-    border: 1px dotted black;
+    /* border: 1px dotted black; */
 }
 
 .slider-controls {
@@ -34,7 +34,7 @@ body {
     height: 10px;
     margin-left: -100px;
     text-align: center;
-    border: 1px dotted green;
+    /* border: 1px dotted green; */
     z-index: 1000;
 }
 
@@ -61,7 +61,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(255, 255, 0, 0.1);
+    /* background-color: rgba(255, 255, 0, 0.1); */
 }
 
 .slide-text {
@@ -75,4 +75,58 @@ body {
     line-height: 1;
     font-weight: bold;
     color: black;
+}
+
+.slide .btn {
+    /* еще  вариант , в котором предусмотренно
+    изменение содержимого, а именно надписи кнопки/ссылки
+    display: inline-block;
+    padding: 10px 80px;
+     */
+    display: block;
+    width: 240px;
+    padding: 10px 0;
+    margin-top: 25px;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+    background-image: url('../img/slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: 63%;
+    background-position: 100% -16px;
+}
+/* состояние по умолчанию от сюда */
+.slide {
+    display: none;
+}
+
+/* .slide:nth-child(1) {
+    display: block;
+} */
+/* состояние по умолчанию до сюда*/
+/* .slide:nth-child(2) {
+    display: block;
+} */
+.slide:nth-child(3) {
+    display: block;
+}
+.slide:nth-child(2) {
+    background-image: url('../img/slider-bg-2.png');
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-position: 100% 1px;
+} 
+
+.slide:nth-child(3) {
+    background-image: url('../img/slider-bg-3.png');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 100% 1px;
 }
