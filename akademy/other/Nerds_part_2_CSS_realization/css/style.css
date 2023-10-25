@@ -26,6 +26,13 @@ body {
     /* border: 1px dotted black; */
 }
 
+.slider input[type=radio] {
+    
+    position: absolute;
+    opacity: 0; 
+   
+}
+
 .slider-controls {
     position: absolute;
     bottom: 95px;
@@ -38,7 +45,7 @@ body {
     z-index: 1000;
 }
 
-.slider-controls i {
+.slider-controls label {
     display: inline-block;
     width: 4px;
     height: 4px;
@@ -50,10 +57,12 @@ body {
     cursor: pointer;
 }
 
-.slider-controls .active {
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
     background: #c1c1c1;
 }
-
+/* тильда ~ обозначает/передает смысл "то" */
 .slide {
     position: absolute;
     top: 0;
@@ -102,27 +111,13 @@ body {
     background-size: 63%;
     background-position: 100% -16px;
 }
-/* состояние по умолчанию от сюда */
-.slide {
-    display: none;
-}
 
-/* .slide:nth-child(1) {
-    display: block;
-} */
-/* состояние по умолчанию до сюда*/
-/* .slide:nth-child(2) {
-    display: block;
-} */
-.slide:nth-child(3) {
-    display: block;
-}
 .slide:nth-child(2) {
     background-image: url('../img/slider-bg-2.png');
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: 100% 1px;
-} 
+}
 
 .slide:nth-child(3) {
     background-image: url('../img/slider-bg-3.png');
@@ -130,3 +125,20 @@ body {
     background-size: 65%;
     background-position: 100% 1px;
 }
+
+.slide {
+    display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+/* когда выбран соответствующий идентификатор то зайти в класс .slides 
+и найти .slide:nth-child(соответствующий) */
+
