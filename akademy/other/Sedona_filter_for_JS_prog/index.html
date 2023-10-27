@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sedona</title>
+</head>
+
+<body>
+    <div class="filter-range">
+        <div class="filter-range-title">
+            Стоимость в сутки (р):
+        </div>
+        <div class="price-controls">
+            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+        </div>
+        <div class="range-controls">
+            <div class="scale">
+                <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+            <!-- одинаковый базовый класс для общей стилизации (кругляши у слайдера)
+                дополнительный класс указывает на их расположение на шкале-->
+        </div>
+        <button class="btn-transperent" type="submit">Показать</button>
+    </div>
+</body>
+
+</html>
