@@ -164,16 +164,16 @@
         <p>Введите свой логин и пароль</p>
         <form class="login-form" action="#" method="post">
             <p>
-            <input class="icon-user" type="text" name="login" placeholder="Логин">
-            <input class="icon-password" type="password" name="password" placeholder="Пароль">
+                <input class="icon-user" type="text" name="login" placeholder="Логин" required>
+                <input class="icon-password" type="password" name="password" placeholder="Пароль" required>
             </p>
             <label class="login-checkbox">
                 <input type="checkbox" name="remember">
                 <span class="checkbox-indicator"></span>Запомните меня
-                
-            </label> 
-        
-        <a class="restore" href="#">Я забыл пароль!</a>
+
+            </label>
+
+            <a class="restore" href="#">Я забыл пароль!</a>
             <button class="btn" type="submit">Войти</button>
         </form>
     </div>
@@ -183,6 +183,59 @@
         <div id="yandex-map"></div>
     </div>
     <div class="modal-overlay"></div>
+    <!-- 
+    <style>
+        /* .modal-content {
+            display: none;
+        } */
+
+        .modal-content-show {
+            display: block;
+        }
+    </style> -->
+
+    <script>
+        // --------------
+
+        // var link = document.querySelector(".login");
+        // link.addEventListener("click", function(event) {
+        //     event.preventDefault();
+        //     console.log("Клик по ссылке");
+        // });
+
+        // --------------
+
+        // var popup = document.querySelector(".modal-content");
+        // popup.classList.add("modal-content-show");
+
+        // --------------
+
+        var link = document.querySelector(".login");
+        var popup = document.querySelector(".modal-content");
+        var close = document.querySelector(".modal-content-close");
+        var login = popup.querySelector("[name=login]");
+        var password = popup.querySelector("[name=password]");
+        var form = popup.querySelector("form");
+
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            popup.classList.add("modal-content-show");
+            login.focus();
+        });
+
+        close.addEventListener("click", function (event) {
+            event.preventDefault();
+            popup.classList.remove("modal-content-show");
+        }); 
+        
+        form.addEventListener("submit", function(event) {
+            if(!login.value || !password.value) {
+                event.preventDefault();
+                console.log("Нужно ввести логин и пароль");
+            }
+        });
+    </script>
+
 </body>
 
 </html>
