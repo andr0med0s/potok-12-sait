@@ -22,6 +22,7 @@ var password = popup.querySelector ('[name=password]');
 var form = popup.querySelector ('form');
 var storage = localStorage.getItem ('login');
 
+var overlay = document.querySelector(".modal-overlay");
 
 link.addEventListener ('click', function (event) {
   event.preventDefault ();
@@ -32,12 +33,14 @@ link.addEventListener ('click', function (event) {
   } else {
     login.focus ();
   }
+  overlay.classList.add("modal-overlay-show");
 });
 
 close.addEventListener ('click', function (event) {
   event.preventDefault ();
   popup.classList.remove ('modal-content-show');
   popup.classList.remove ('modal-error');
+  overlay.classList.remove("modal-overlay-show");
 });
 
 form.addEventListener ('submit', function (event) {
@@ -45,7 +48,7 @@ form.addEventListener ('submit', function (event) {
     event.preventDefault ();
     // console.log("Нужно ввести логин и пароль");
     popup.classList.add ('modal-error');
-    // alert("Вы забыли внести данные");
+    alert("Вы забыли внести данные");
   } else {
     localStorage.setItem ('login', login.value);
   }
@@ -56,6 +59,7 @@ window.addEventListener ('keydown', function (event) {
     if (popup.classList.contains ('modal-content-show')) {
       popup.classList.remove ('modal-content-show');
       popup.classList.remove ('modal-error');
+      overlay.classList.remove("modal-overlay-show");
     }
   }
 });
