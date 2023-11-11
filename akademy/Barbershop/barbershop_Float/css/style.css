@@ -814,11 +814,11 @@ body {
     margin-bottom: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
-/* --------- */
+
 .product-shadow{
     box-shadow: 3px 4px 25px 0px rgba(0, 0, 0, 0.3);
 }
-/* -------- */
+
 .product:nth-child(3n) {
     margin-right: 0;
 }
