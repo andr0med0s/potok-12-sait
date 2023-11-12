@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1.0, initial-scale=1.0">
+  <title>Device</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+      <div class="header-top ">
+        <div class="header-top__logo">
+          <img src="img/icons/icon_logo.png" width="163" height="36" alt="Лого `Device`">
+        </div>
+      </div>
+      <!-- header-top -->
+
+      <div class="header-top__middle clearfix">
+        <div class="header-top__search">
+          <span class="search-field">
+            <input type="text" name="search" value="" placeholder="Поиск по сайту">
+          </span>
+          <span class="search-field__img"></span>
+        </div>
+        <!-- header-top__search -->
+        <div class="user-menu">
+          <div class="user-profile__btn">
+            <button class="user-profile__logout">Войти</button>
+          </div>
+        </div>
+        <!-- user-menu -->
+        <div class="buttons">
+          <a class="compare-link" href="#">
+            <span class="compare-link__img"></span>
+            <span class="compare-link__text">Сравнить</span>
+          </a>
+          <div class="cart-button">
+            <a class="buttons-link" href="#">
+              <span class="buttons-link__img"></span>
+              <span class="buttons-link__text">Корзина</span>
+            </a>
+          </div>
+        </div>
+        <!-- buttons -->
+      </div>
+      <!-- header-top__middle -->
+
+      <nav class="header-bottom_nav clearfix">
+        <div class="header-bottom__catalog">
+          <button class="catalog-btn">Каталог товаров</button>
+        </div>
+        <!-- header-bottom__catalog -->
+        <div class="header-bottom__delivery">
+          <button class="delivery-btn">Доставка</button>
+        </div>
+        <!-- header-bottom__delivery -->
+        <div class="header-bottom__warranty">
+          <button class="warranty-btn">Гарантия</button>
+        </div>
+        <!-- header-bottom__warranty -->
+        <div class="header-bottom__contacts ">
+          <button class="contacts-btn">Контакты</button>
+        </div>
+        <!-- header-bottom__contacts -->
+      </nav>
+      <!-- header-bottom_nav -->
+
+    </div>
+    <!-- container -->
+  </header>
+  <!-- main-header -->
+
+  <main class="main-page">
+    <div class="container">
+
+      <div class="main-page__categories">
+        <div class="categories-menu">
+          <h3 class="categories-title">Моноподы для селфи</h3>
+          <nav class="breadcrumb-list clearfix">
+            <ul>
+              <li class="breadcrumb-item"><a href="#">Главная</a></li>
+              <li class="breadcrumb-item"><a href="#">Каталог товаров</a></li>
+              <li class="breadcrumb-item"><a href="#">Моноподы для селфи</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- main-page__catalog -->
+
+      <div class="main-page__items clearfix">
+        <div class="section_wrap_left">
+          <div class="main-page__filter">
+            <h3 class="filter-title">Фильтр:</h3>
+
+            <form class="filter-options" action="" method="get">
+
+              <div class="filter-line"></div>
+              <!-- filter-line -->
+
+              <div class="filter-price">
+                <h3 class="filter-price__title">Стоимость</h3>
+                <div class="filter-price__slider">
+                  <div class="price-range__slider">
+                    <input type="range" min="0" max="5000" value="100" class="slider">
+                  </div>
+                  <div class="price-range__text">
+                    <div class="range-text__from">
+                      <p class="range-from_txt">от</p>
+                      <input class="range-from_value" type="text" min="0" max="5000" value="0">
+                    </div>
+                    <div class="range-text__to">
+                      <p class="range-to_txt">до</p>
+                      <input class="range-to_value" type="text" min="0" max="5000" value="0">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- filter-price -->
+
+              <div class="filter-line"></div>
+              <!-- filter-line -->
+
+              <fieldset class="filter-color">
+                <legend>
+                  <h2 class="filter-color__title">Цвет</h2>
+                </legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="check1" name="color" value="black" class="checkbox-frame">
+                    <label for="check1">Черный</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check2" name="color" value="black" class="checkbox-frame">
+                    <label for="check2">Белый</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check3" name="color" value="black" class="checkbox-frame">
+                    <label for="check3">Синий</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check4" name="color" value="black" class="checkbox-frame">
+                    <label for="check4">Красный</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check5" name="color" value="black" class="checkbox-frame">
+                    <label for="check5">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <!-- filter-color -->
+
+              <div class="filter-line"></div>
+              <!-- filter-line -->
+
+              <fieldset class="filter-bluetooth">
+                <legend>
+                  <h3 class="filter-bluetooth__title">Цвет</h3>
+                </legend>
+                <ul>
+                  <li>
+                    <input type="radio" id="check6" name="bluetooth" value="yes" class="radio-frame">
+                    <label for="check6">Есть</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="check7" name="bluetooth" value="no" class="radio-frame">
+                    <label for="check7">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <!-- filter-bluetooth -->
+
+              <p><input type="submit" value="Показать"></p>
+            </form>
+            <!-- filter-options -->
+          </div>
+          <!-- main-page__filter -->
+        </div>
+
+        <div class="section_wrap_right">
+          <div class="main-page__sorting">
+            <div class="sorting-nav clearfix">
+              <p class="sort-title">Сортировка:</p>
+              <a href="#" class="sort-link">
+                По цене
+              </a>
+              <a href="#" class="sort-link">
+                По типу
+              </a>
+              <a href="#" class="sort-link">
+                По популярности
+              </a>
+              <div class="sort-icon">
+                <span class="sort-icon__up"><img src="" alt="сортировка вверх"></span>
+                <span class="sort-icon__down"><img src="" alt="сортировка вниз"></span>
+              </div>
+            </div>
+          </div>
+          <!-- main-page__sorting -->
+
+          <div class="main-page__boxes clearfix">
+            <div class="box-1 clearfix">
+              <div class="box-1__img">
+                <img src="img/main-page__boxes/box-1__img.jpg" width="360" height="380" alt="">
+              </div>
+
+              <h2 class="box-1__txt">Любительская селфи-палка</h2>
+              <span class="box-1__price">500 руб.</span>
+
+            </div>
+            <!-- box-1 -->
+            <div class="box-2">
+
+              <div class="box-2__img">
+                <img src="img/main-page__boxes/box-2__img.jpg" width="360" height="380" alt="">
+              </div>
+
+              <h2 class="box-2__txt">Професиональная селфи-палка</h2>
+              <span class="box-2__price">1 500 руб.</span>
+
+            </div>
+            <!-- box-2 -->
+            <div class="box-3">
+
+              <div class="box-3__img">
+                <img src="img/main-page__boxes/box-3__img.jpg" width="360" height="380" alt="">
+              </div>
+
+              <h2 class="box-3__txt">Непотопляемая селфи-палка</h2>
+              <span class="box-3__price">2 500 руб.</span>
+
+            </div>
+            <!-- box-3 -->
+            <div class="box-4">
+
+              <div class="box-4__img">
+                <img src="img/main-page__boxes/box-4__img.jpg" width="360" height="380" alt="">
+              </div>
+
+              <h2 class="box-4__txt">Селфи-палка "Следуй за мной"</h2>
+              <span class="box-4__price">4 900 руб.</span>
+
+            </div>
+            <!-- box-4 -->
+          </div>
+          <!-- main-page__boxes -->
+
+          <div class="main-page__nav clearfix">
+            <div class="nav-back">
+              <a href="#">Назад</a>
+            </div>
+            <div class="nav-number">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+            </div>
+            <div class="nav-forward">
+              <a href="#">Вперед</a>
+            </div>
+          </div>
+          <!-- main-page__nav -->
+        </div>
+      </div>
+      <!-- main-page__items -->
+    </div>
+    <!-- main-page__container -->
+
+  </main>
+  <!-- main-page -->
+
+  <footer class="main-footer">
+    <div class="main-footer container">
+      <nav class="footer-top clearfix">
+
+        <div class="footer-top__logo">
+          <img src="img/footer_logo.png" width="163" height="36" alt="Лого `Device`">
+        </div>
+        <!-- footer-top__logo  -->
+
+        <div class="user-menu_btn">
+          <div class="login_btn">
+            <!-- <div class="user-profile__login">
+              <span class="user-profile__icon"><img src="img/header/user.svg" width="10" alt=""></span>
+              <span class="user-profile__name"></span>
+            </div> -->
+            <div class="user-profile__btn">
+              <button class="user-profile__logout">Войти</button>
+            </div>
+          </div>
+
+          <a class="compare-link" href="#">
+            <span class="compare-link__img"></span>
+            <span class="compare-link__text">Сравнить</span>
+          </a>
+
+          <div class="cart-button">
+            <a class="buttons-link" href="#">
+              <span class="buttons-link__img"></span>
+              <span class="buttons-link__text">Корзина</span>
+            </a>
+          </div>
+        </div>
+        <!-- buttons -->
+
+      </nav>
+      <!-- footer-top-->
+
+      <div class="footer-middle clearfix">
+
+        <div class="footer-middle__adress">
+          <address>
+            г. Москва, ул. Строителей, 15
+          </address>
+        </div>
+        <!-- footer-middle__adress -->
+
+        <div class="footer-middle__wrapper clearfix">
+          <div class="footer-middle_delivery">
+            <button class="delivery-btn">Доставка</button>
+          </div>
+          <!-- footer-bottom__delivery -->
+          <div class="footer-bottom__warranty">
+            <button class="warranty-btn">Гарантия</button>
+          </div>
+          <!-- footer-bottom__warranty -->
+          <div class="footer-bottom__contacts">
+            <button class="contacts-btn">Контакты</button>
+          </div>
+          <!-- footer-bottom__contacts -->
+        </div>
+        <!-- footer-middle__wrapper -->
+
+        <div class="footer-middle__connection">
+          <span class="tel-connect">Тел.: </span>
+          <a class="tel-connect__number" href="tel:+7(495)495-95-95">+7 (495) 495-95-95</a>
+        </div>
+      </div>
+      <!-- footer-middle -->
+
+      <div class="footer-bottom clearfix">
+        <div class="footer-line">-----</div>
+        <!-- filter-line -->
+        <div class="footer-social">
+          <span class="social__icon">
+            <a class="soc_icon" href="#"> <img src="" width="36px" height="36px" alt=""> </a>
+            <a class="soc_icon" href="#"> <img src="" width="36px" height="36px" alt=""> </a>
+            <a class="soc_icon" href="#"> <img src="" width="36px" height="36px" alt=""> </a>
+          </span>
+        </div>
+        <!-- footer-social -->
+        <div class="logo-developers">
+          <span class="logo-developers__img">
+            <img src="" alt="Лого разработчика">
+          </span>
+        </div>
+      </div>
+      <!-- footer-bottom -->
+    </div>
+    <!-- main-footer__wrap -->
+  </footer>
+  <!-- main-footer -->
+</body>
+
+</html>
