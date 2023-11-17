@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>
+            <!--  вариант 1-->
+            <span class="visually-hidden">Барбершоп «Бородинский»<br></span>
+            <img src="img/Borodinski_logo.png" width="368" height="204" alt="" srcset="">
+            <!-- как бы альт берется из span  -->
+
+            <!-- Вариант 2 
+            <nav>
+                <a><img src="img/Borodinski_logo.png" width="368" height="204" alt="" srcset=""></a>
+            </nav> -->
+
+        </h1>
+
+        <nav class="main-navigation">
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+
+            <ul class="user-navigation">
+                <li><a class="login-link" href="#login">Вход</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- <h1>Барбершоп "Бородинский"</h1> более логичное место для заголовка, 
+            если заголовок не указан в макете скрывается через css -->
+
+        <!-- С вариантом 2
+            <h1>Барбершоп "Бородинский"</h1> -->
+
+        <section class="features">
+            <!-- скрывается через css -->
+            <h2 class="visually-hidden">Приемущества</h2>
+            <ul class="features-list">
+                <li class="feature">
+                    <h3 class="feature-name">Быстро</h3>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной
+                        стрижки минутки!</p>
+                </li>
+                <li class="feature">
+                    <h3 class="feature-name">Круто</h3>
+                    <p>Забудьте, как стриглись раньше Мы сделаем из вас звезду футбола или кино! Во всяком случае
+                        внешне.</p>
+                </li>
+                <li class="feature">
+                    <h3 class="feature-name">Дорого</h3>
+                    <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому, же разве цена не дает
+                        определенный статус?</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="news">
+            <h2 class="news-title">Новости</h2>
+            <ul class="news-preview">
+                <li>
+                    <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                    <time datetime="2016-01-11">11 января</time>
+                </li>
+                <li>
+                    <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДЕТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
+                        ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+                    <time datetime="2016-01-18">18 яеваря</time>
+                </li>
+            </ul>
+            <a href="news.html" class="btn"></a>
+        </section>
+
+        <section class="gallery">
+            <h2 class="gallery-title">Фотогалерея</h2>
+            <figure class="gallery-content">
+                <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt=""></a>
+                <a href="#"><img src="img/photo_2.jpg" width="286" height="164" alt=""></a>
+            </figure>
+            <!-- кнопки вперед назад будут на следующем слое -->
+        </section>
+
+        <section class="contacts">
+            <h2 class="contacts-title">Контактная Информация</h2>
+            <p>
+                БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+                АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+                ТЕЛЕФОН: +7 (495) 666-02-66
+            </p>
+            <p>
+                ВРЕМЯ РАБОТЫ:<br>
+                ПН — ПТ: С 10:00 ДО 22:00<br>
+                СБ — ВС: С 10:00 ДО 19:00
+            </p>
+            <a href="map.html" class="btn">Как проехать</a>
+            <a href="contacts.html" class="btn">Обратная связь</a>
+        </section>
+
+        <section class="appointment">
+            <h2 class="appointment-title">Записаться</h2>
+            <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+            <form action="#" class="appointment-form" method="post">
+                <p>
+                    <label class="appointment-date-field" for="">Дата</label>
+                    <input type="text" id="appointment-date-field" placeholder="Дата">
+                </p>
+                <p>
+                    <label class="appointment-time-field" for="">Время</label>
+                    <input type="text" id="appointment-time-field" placeholder="Время">
+                </p>
+                <p>
+                    <label class="appointment-name-field" for="">Ваше имя</label>
+                    <input type="text" id="appointment-name-field" placeholder="Ваше имя">
+                </p>
+                <p>
+                    <label class="appointment-phone-field" for="">Телефон</label>
+                    <input type="text" id="appointment-phone-field" placeholder="Телефон">
+                </p>
+                <p>
+                    <button class="btn">Отправить</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p class="footer-contacts">
+            БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+            АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+            <a href="map.html">Как нас найти?</a><br>
+            ТЕЛЕФОН: +7 (495) 666-02-66
+        </p>
+
+        <p class="footer-social">
+            <!-- тег b выделение дез придания смысла -->
+            <b>Давайте дружить!</b>
+            <span class="visually-hidden">Подписывайтесь на нас в соцеальных сетях:</span>
+            <a href="#" class="social-btn social-btn-vk">Вконтакте</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a><span class="visually-hidden">,</span>
+            <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        </p>
+
+        <p class="footer-copyright">
+            <b>Разработано</b>
+            <a href="#" class="btn"></a>
+        </p>
+    </footer>
+
+    <section class="login" id="login">
+        <h2 class="login-title">Личный кабинет</h2>
+        <p>Здесь будет форма.</p>
+    </section>
+</body>
+
+</html>

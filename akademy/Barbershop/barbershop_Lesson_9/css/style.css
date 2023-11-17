@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 960рх;
+    font-weight: 700;
+    font-size: 14рх;
+    line-height: 24рх;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    background: #000 url("../img/bg.jpg") no-repeat center top;
+}
+.visually-hidden{
+    display: none;
+}
