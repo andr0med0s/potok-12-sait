@@ -17,10 +17,10 @@ mapClose.addEventListener('click', function(event){
 });
 
 window.addEventListener('keydown', function(event) {
+    if (mapPopup.classList.contains('modal-content-show')) {
     if (event.keyCode === 27){
-        if (mapPopup.classList.contains('modal-content-show')) {
             mapPopup.classList.remove('modal-content-show');
-            mapOverlay.classList.remove("modal-overlay--show");
+            mapOverlay.classList.remove("modal-overlay-show");
         }
         
     }

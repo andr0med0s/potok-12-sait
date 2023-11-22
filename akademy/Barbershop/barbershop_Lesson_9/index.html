@@ -14,11 +14,11 @@
 
 <body>
     <header class="main-header">
-        
+
         <h1>
             <!--  вариант 1-->
             <span class="visually-hidden">Барбершоп «Бородинский»<br></span>
-            <img src="img/Borodinski_logo.png" width="368" height="204" alt="лого" >
+            <img src="img/Borodinski_logo.png" width="368" height="204" alt="лого">
             <!-- как бы альт берется из span  -->
 
             <!-- Вариант 2 
@@ -40,9 +40,10 @@
             <ul class="user-navigation">
 
                 <!-- для noscript.css  -->
-                    <!-- <li><a class="login-link" href="login.html">Вход</a></li>  -->
-                    <li><a class="login" href="#">Вход</a></li> 
-               
+                <li><a class="login-link" href="login.html">Вход</a></li> 
+
+                <li><a class="login" href="#">Вход</a></li>
+
 
 
             </ul>
@@ -97,14 +98,38 @@
                 </ul>
                 <a href="news.html" class="btn">Все новости</a>
             </section>
-    
+
             <section class="gallery">
                 <h2 class="gallery-title">Фотогалерея</h2>
-                <p class="gallery-content">
+                <p class="gallery-content__no-js">
+                    <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt=""></a>
+                    <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt=""></a>
+                    <a href="#"><img src="img/photo_2.jpg" width="286" height="164" alt=""></a>
+                    <a href="#"><img src="img/photo_2.jpg" width="286" height="164" alt=""></a>
+                    <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt=""></a>
+                    <a href="#"><img src="img/photo_2.jpg" width="286" height="164" alt=""></a>
+                    <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt=""></a>
+                    <a href="#"><img src="img/photo_2.jpg" width="286" height="164" alt=""></a>
                     <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt=""></a>
                     <a href="#"><img src="img/photo_2.jpg" width="286" height="164" alt=""></a>
                 </p>
                 <!-- кнопки вперед назад будут на следующем слое -->
+
+                <!-- <div class="gallery-item gallery-live"> -->
+                <div class="gallery-item ">
+                    <p class="gallery-content">
+                        <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt="" srcset=""></a>
+                        <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt="" srcset=""></a>
+                        <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt="" srcset=""></a>
+                        <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt="" srcset=""></a>
+                        <!-- <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt="" srcset=""></a>
+                        <a href="#"><img src="img/photo_1.jpg" width="286" height="164" alt="" srcset=""></a> -->
+                    </p>
+                    <!-- <button class="btn gallary-prev" type="button" disabled>Назад</button>
+                    <button class="btn gallary-next" type="button">Вперёд</button> -->
+                    <!-- /.gallery-content -->
+                </div>
+
             </section>
 
         </div>
@@ -123,11 +148,11 @@
                     ПН — ПТ: С 10:00 ДО 22:00<br>
                     СБ — ВС: С 10:00 ДО 19:00
                 </p>
-                <!-- <a href="contacts.html" class="btn map">Как проехать</a> -->
+                <a href="contacts.html" class="btn__no-js map">Как проехать</a>
                 <a href="#" class="btn js-open-map">Как проехать</a>
-                <a href="contacts.html" class="btn">Обратная связь</a>
+                <a href="#" class="btn">Обратная связь</a>
             </section>
-    
+
             <section class="appointment">
                 <h2 class="appointment-title">Записаться</h2>
                 <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
@@ -161,7 +186,7 @@
 
     <footer class="main-footer">
         <div class="footer-columns">
-            
+
             <p class="footer-contacts">
                 БАРБЕРШОП «БОРОДИНСКИЙ»<br>
                 АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
@@ -199,7 +224,7 @@
         <p>Введите свой логин и пароль</p>
         <form class="login-form" action="#" method="post">
             <p>
-                <input class="icon-user" type="text" name="login" placeholder="Логин" >
+                <input class="icon-user" type="text" name="login" placeholder="Логин">
                 <input class="icon-password" type="password" name="password" placeholder="Пароль">
             </p>
             <label class="login-checkbox">
@@ -222,7 +247,34 @@
     <div class="modal-overlay"></div>
     <script src="js/popup.js"></script>
     <script src="js/map.js"></script>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9a7492609442fa0084e30dff5a8203b3486a7b391218b72b4346a4d5a1c236c0&amp;width=766&amp;height=561&amp;lang=ru_RU&amp;scroll=true&amp;id=yandex-map"></script>
+    <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9a7492609442fa0084e30dff5a8203b3486a7b391218b72b4346a4d5a1c236c0&amp;width=766&amp;height=561&amp;lang=ru_RU&amp;scroll=true&amp;id=yandex-map"></script>
+    <script>
+        var html = document.documentElement;
+
+        html.className = html.className.replace("no-js", "js");
+
+        var gallery = document.querySelector(".gallery-item");
+        gallery.classList.add("gallery-live");
+
+
+        // Добавляем управляющие элементы
+        //Внимание! Плохая практикаю Только для Демо
+        var buttons =   '<button class="btn gallary-prev" type="button" >Назад</button>'
+                        +                
+                        '<button class="btn gallary-next" type="button">Вперёд</button>';
+
+        gallery.innerHTML = gallery.innerHTML + buttons;
+
+        //Зададим начальное состояние кнопок
+
+        var prev = document.querySelector(".gallary-prev");
+        prev.setAttribute('disabled', 'disabled');
+
+        //инициализация завершена
+        //далее типовой код работы галереи
+        // обработка событий, переключение слайдов и т.д
+    </script>
 </body>
 
 </html>

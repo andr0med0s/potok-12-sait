@@ -174,6 +174,10 @@ body {
     opacity: 0.3;
 }
 
+.user-navigation .login-link {
+    display: none;
+}
+
 .user-navigation .login:hover::before {
     opacity: 1;
 }
@@ -337,14 +341,91 @@ main {
     background-color: #000;
 }
 
+.btn__no-js {
+    display: none;
+}
+
+.gallery-content__no-js {
+    display: none;
+}
+
+.gallery-item {
+    position: relative;
+    height: 260px;
+}
+
+
+
 .gallery-content {
+    /* height: 164px; */
+    margin: 0;
+    /* max-height: 200px;
+        overflow: auto;
+        background-color: #cccccc;
+        border: 7px solid #fff; */
+}
+
+/* .gallery-content img {
+        width: 133px;
+        height: 72px;
+    } */
+
+/**/
+.gallery-content img {
+
+    width: 143px;
+    height: 82px;
+
+    margin-right: 5px;
+    /* position: relative;
+    height: 260px; */
+}
+
+.gallery-live {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-live .gallery-content {
+    height: 164px;
+    margin: 0;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.gallery-live .gallery-content a {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.gallery-live .gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+/**/
+.gallery-item .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
     margin: 0;
 }
 
-.gallery-content img {
-    width: 143px;
-    height: 82px;
-    margin-right: 5px;
+.gallary-prev {
+    left: 0;
+}
+
+.gallary-next {
+    right: 0;
+}
+
+.no-js .gallery-item .btn {
+    display: none;
+}
+
+.js .gallery-item .btn {
+    display: block;
 }
 
 .appointment-form label {
@@ -721,7 +802,7 @@ main {
 
 .modal-content-show {
     display: block;
-} 
+}
 
 .modal-overlay {
     display: none;

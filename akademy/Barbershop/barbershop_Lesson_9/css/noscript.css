@@ -102,7 +102,12 @@ body {
     text-decoration: none;
 }
 
+.user-navigation .login {
+    display: none;
+}
+
 .user-navigation .login-link {
+    display: block;
     position: relative;
     padding-left: 50px;
 }
@@ -251,7 +256,7 @@ main {
     text-transform: none;
 }
 
-.btn {
+.btn__no-js {
     display: inline-block;
     margin-right: 16px;
     padding: 10px 33px;
@@ -270,29 +275,44 @@ main {
 }
 
 
-.btn:hover,
-.btn:active {
+.btn__no-js:hover,
+.btn__no-js:active {
     background-color: #663d15;
 }
 
-.btn.disabled,
-.btn:disabled {
+.btn__no-js.disabled,
+.btn__no-js:disabled {
     cursor: default;
     opacity: 0.5;
 }
 
-.btn.disabled:hover,
-.btn:disabled:hover {
+.btn__no-js.disabled:hover,
+.btn__no-js:disabled:hover {
     background-color: #000;
 }
 
-.gallery-content {
-    margin: 0;
+.contacts .js-open-map {
+    display: none;
 }
 
-.gallery-content img {
-    width: 143px;
-    height: 82px;
+.gallery-item {
+    display: none;
+}
+
+.gallery-content__no-js{
+    display: block;
+    margin: 0;
+    max-height: 200px;
+    overflow: auto;
+    background-color: #cccccc;
+    border: 7px solid #fff;
+}
+
+
+
+.gallery-content__no-js img {
+    width: 128px;
+    height: 67px;
     margin-right: 5px;
 }
 
@@ -448,7 +468,7 @@ main {
     margin-bottom: 15px;
 }
 
-.footer-copyright .btn {
+.footer-copyright .btn__no-js {
     margin-right: 0;
 }
 
@@ -457,7 +477,7 @@ main {
     background-color: #ffffff;
 }
 
-.login {
+#login {
     display: none;
 }
 
@@ -650,7 +670,7 @@ main {
     color: #000000;
 }
 
-.login-form .btn {
+.login-form .btn__no-js {
     width: 100%;
     margin-top: 15px;
 }
