@@ -1,0 +1,30 @@
+.die_ie {
+
+
+/* m0-20 сокрашение */
+margin: 0 20px;
+
+/* m0--20 */
+margin: 0 -20px;
+
+/* m10px30p5x */
+margin: 10px 30% 5ex;
+
+/* c# */
+color: #000;
+
+/* c#e0 */
+color: #e0e0e0;
+
+/* c#ff0 */
+color: #ff0;
+
+/* cr */
+color: rgb(0, 0, 0);
+
+/* m0+p0+c#0 */
+margin: 0;
+padding: 0;
+color: #000;
+
+}
