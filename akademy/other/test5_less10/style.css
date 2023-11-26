@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+}
+
+/* part 1
+a {
+    float: left;
+    padding: 10px 20px;
+    background: #090;
+    color: white;
+    text-decoration: none;
+}
+.last {
+    float: right;
+} */
+
+/*  part 2 - 3
+.button {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 0.2em solid #afafaf;
+    background: linear-gradient(#7f7f7f, #e3e3e3);
+    color: #585a5e;
+    font: inherit;
+}
+
+.button[disabled] {
+    color:#ccc;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2em #fff,
+                0 0 0 0.4em #2f7cc0;
+}
+
+.button:active {
+    border-color: #4777a6;
+    background: #4e87c0;
+    color:#fff;
+} */
+
+/* part 4 
+ p {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+} */
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+}
