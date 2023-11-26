@@ -1,107 +1,25 @@
-html,
-body {
-    min-width: 1122px;
-    min-height: 1750px;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>набор для путешествий «Baxter of California»</title><link rel="stylesheet" href="css\style_item.css"></head><body><header class="main-header"><div class="container clearfix"><nav class="main-navigation"><a href="#"><img src="img/logo.png" alt="Логотип Барбершоп «Бородинский» "></a><ul><li><a href="#">Информация</a></li></ul><ul><li><a href="#">Новости</a></li></ul><ul><li><a href="#">Прайс-лист</a></li></ul><ul><li><a href="#">Магазин</a></li></ul><ul><li><a href="#">Контакты</a></li></ul></nav><!-- /.main-navigation --><div class="user-block"><img src="../Index/img/icon_login.png" alt=""><a href="#" class="login">Вход</a></div><!-- /.user-block --></div><!-- /.container --></header><!-- main-header --><main class="container "><div class="container-title"><h1>набор для путешествий «Baxter of California»</h1><nav class="breadcrumb-list"><ul><li class="breadcrumb-item"><a href="#">Главная</a></li><li class="breadcrumb-item"><a href="#">Магазин</a></li><li class="breadcrumb-item"><a href="#">Средства для ухода</a></li><li class="breadcrumb-item"><a href="#">Набор для путешествий «Baxter of California»</a></li></ul></nav></div><!-- container-title --><div class="index-content clearfix"><div class="content-slider"><div class="container-slider__main"><img src="img/slider-main.jpg" alt=""></div><div class="container-slider__bottom"><div class="slider-item"><img src="img/slider-bottom__left.jpg" alt=""></div><div class="slider-item"><img src="img/slider-bottom__center.jpg" alt=""></div><div class="slider-item"><img src="img/slider-bottom__right.jpg" alt=""></div></div></div><!-- /.content-slider --><div class="content-description "><div class="description-top clearfix"><p class="availability">есть в наличии</p><p class="article">Артикул: dexter-ae</p></div><!-- description-top --><section class="description-txt"><p class="descr-txt">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все,
+что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания,
+увлажняющий крем,
+крем для бритья,
+крем после бритья,
+шампунь. Набор также может стать отличным подарком. </p></section><!-- description-txt --><div class="description-button"><span class="price">2 900 РУБ.</span><a href="#"><button>купить</button></a></div><!-- description-button --><section class="description-composition"><p>В набор входят:</p><ul><li>Средство для умывания (50 мл)</li><li>Увлажняющий крем (50 мл)</li><li>Крем для бритья (50 мл)</li><li>Крем после бритья,
+шампунь (50 мл)</li><li>Удобная кожаная косметичка</li></ul></section><!-- description-composition --></div><!-- content-description --></div></main><!-- /.container --><footer class="main-footer"><div class="container clearfix"><section class="footer-contact">Барбершоп «Бородинский»<br>Адрес: Г. Санкт-Петерберг,
+ул. Б. Конюшенная,
+д. 19/8<br><a href="#">Как нас найти?</a><br>Телефон:+7 (495) 666-02-66 </section><!-- footer-contact --><section class="footer-social"><p>Давайте дружить!</p><a href="#" class="social-btn social-btn-vk">Вконтакте</a><a href="#" class="social-btn social-btn-fb">Фейсбук</a><a href="#" class="social-btn social-btn-inst">Инстаграм</a></section><!-- footer-social --><section class="footer-copyright"><p>Разработано:</p><a href="#" class="btn">AndromedoZ</a></section><!-- footer-copyright --></div><!-- /.container --></footer><!-- /.main-footer --></body></html>tent: "";
+position: absolute;
+top: 28px;
+left: 20px;
+width: 18px;
+height: 18px;
+background: transparent url("../img/sprite.png") no-repeat;
+background-position: -2px -1px;
+opacity: 0.3;
 
-body {
-    min-width: 960px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    font-family: 'PT Sans Narrow', 'Arial', sans-serif;
-    color: #fff;
-    text-transform: uppercase;
-    background: #000000 url("../img/bg.jpg") no-repeat center top;
 }
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.main-header {
-    margin-bottom: 60px;
-    color: #fff;
-    background-color: #000000;
-}
-
-.container {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-.main-navigation {
-    float: left;
-    width: 780px;
-}
-
-.main-navigation ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
-}
-
-.main-navigation li {
-    display: inline-block;
-    font-size: 16px;
-    line-height: 20px;
-    vertical-align: top;
-}
-
-.main-navigation a {
-    display: block;
-    padding: 25px 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.main-navigation a:hover {
-    background: #242424;
-}
-
-.user-block {
-    float: right;
-    max-width: 140px;
-}
-
-.login {
-    position: relative;
-    display: inline-block;
-    padding: 25px 20px;
-    padding-left: 50px;
-    font-size: 16px;
-    line-height: 20px;
-    vertical-align: top;
-    color: #fff;
-    text-decoration: none;
-}
-
-.login:hover {
-    background: #242424;
-}
-
-.login::before {
-    content: "";
-    position: absolute;
-    top: 28px;
-    left: 20px;
-    width: 18px;
-    height: 18px;
-    background: transparent url("../img/sprite.png") no-repeat;
-    background-position: -2px -1px;
-    opacity: 0.3;
-}
-
 .login:hover:before {
     opacity: 1;
 }
-
 .index-logo {
     width: 368px;
     height: 204px;
@@ -113,31 +31,26 @@ body {
     до следующего блока указанное в фотошопе в данном
     случае 31 - ((42-30)/2) = 25 */
 }
-
 .features {
     margin-bottom: 80px;
 }
-
 .features-item {
     float: left;
     /* width: 290px; */
+    
     width: 300px;
     margin-right: 20px;
     text-align: center;
 }
 
-
 /*обнуляем margin для последнего блока*/
-
 .features-item:last-child {
     margin-right: 0;
 }
-
 .features-item p {
     margin: 10px;
     margin-bottom: 0;
 }
-
 .features-name {
     position: relative;
     display: block;
@@ -146,7 +59,6 @@ body {
     font-size: 30px;
     line-height: 42px;
 }
-
 .features-name::after {
     content: "";
     position: absolute;
@@ -159,61 +71,52 @@ body {
     background-color: #fff;
     transform: rotate(45deg);
 }
-
 .index-content {
     margin-bottom: 35px;
     padding: 50px 80px;
     color: #000000;
     background: url(../img/index-content-shadow.png) no-repeat center, #f8f5f2 url(../img/content_bg_up.jpg);
 }
-
 .index-content-left {
     float: left;
     width: 380px;
 }
-
 .index-content-right {
     float: right;
     width: 300px;
 }
-
 .index-content-title {
     margin: 0;
     margin-bottom: 25px;
     font-size: 30px;
     line-height: 42px;
 }
-
 .index-content p {
     margin: 0;
     margin-bottom: 25px;
 }
-
 .news-preview {
     margin: 0;
     padding: 0;
     padding-right: 35px;
     list-style: none;
 }
-
 .news-preview li {
     margin-bottom: 25px;
 }
-
 .news-preview p {
     margin-bottom: 0;
 }
-
 .news-preview time {
     text-transform: none;
 }
-
 .btn {
     display: inline-block;
     margin-right: 16px;
     padding: 10px 33px;
     /* font: inherit; */
     /**/
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
@@ -227,61 +130,52 @@ body {
     border: none;
     cursor: pointer;
 }
-
 .btn:hover,
 .btn:active {
     background-color: #663d15;
 }
-
 .btn.disabled,
 .btn:disabled {
     cursor: default;
     opacity: 0.5;
 }
-
 .btn.disabled:hover,
 .btn:disabled:hover {
     background: #000000;
 }
-
 .gallery {
     position: relative;
     height: 260px;
 }
-
 .gallery-content {
     height: 164px;
     margin: 0;
     background-color: #cccccc;
     border: 7px solid #fff;
 }
-
 .gallery-content img {
     width: 286px;
     height: 164px;
 }
-
 .gallery .btn {
     position: absolute;
     bottom: 0;
     width: 140px;
     margin: 0;
 }
-
 .gallary-prev {
     left: 0;
 }
-
 .gallary-next {
     right: 0;
 }
-
 .appointment-form input {
     /* font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans Narrow", "Arial", sans-serif ;
   color:#000000;
   text-transform: uppercase; */
+    
     float: left;
     width: 106px;
     margin-right: 20px;
@@ -293,74 +187,21 @@ body {
     background-color: #f9f6f3;
     border: 2px solid #000000;
 }
-
 .appointment-form input:focus {
     border: 2px solid #663d15;
 }
-
 .appointment-form input:nth-child(2n) {
     margin-right: 0;
 }
-
 .appointment-form .btn {
     clear: both;
     width: 100%;
 }
 
-
 /* стили для внутренних страниц */
-
-.inner-page {
-    color: #000000;
-    background: #f8f3f0 url("img/pattern-white.jpg") repeat;
-}
-
-.inner-page .main-header {
-    margin-bottom: 55px;
-}
-
-.main-navigation .active {
-    position: relative;
-    background-color: none;
-}
-
-.main-navigation .active a:hover {
-    background-color: none;
-}
-
-.main-navigation .active ::after {
-    content: "";
-    position: absolute;
-    right: 20px;
-    bottom: 0%;
-    left: 20px;
-    height: 5px;
-    background-color: #fff;
-}
-
-.main-navigation .logo-inner {
-    float: left;
-    width: 111px;
-    height: 20px;
-    padding-top: 22px;
-}
-
-.main-navigation .logo-inner img {
-    width: 111px;
-    height: 24px;
-}
-
-.main-navigation .logo-inner:hover {
-    background: none;
-}
-
-
-/* стили для внутренних страниц */
-
 .inner-page-title {
     margin-bottom: 55px;
 }
-
 .inner-page-title h1 {
     margin: 0;
     margin-bottom: 20px;
@@ -368,19 +209,16 @@ body {
     font-size: 30px;
     line-height: 42px;
 }
-
 .breadcrumbs {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 .breadcrumbs li {
     position: relative;
     display: inline;
     padding-right: 40px;
 }
-
 .breadcrumbs li::after {
     content: "";
     position: absolute;
@@ -391,54 +229,43 @@ body {
     background-color: #000;
     transform: rotate(45deg);
 }
-
 .breadcrumbs a {
     color: #000000;
     text-decoration: none;
 }
-
 .breadcrumbs a:hover {
     text-decoration: underline;
 }
-
 .breadcrumbs .current {
     color: #aba9a7;
 }
-
 .breadcrumbs .current::after {
     display: none;
 }
-
 .index-content {
     margin-bottom: 75px;
 }
-
 .inner-content h2 {
     margin-top: 60px;
     margin-bottom: 30px;
     font-size: 24px;
     line-height: 30px;
 }
-
 .inner-content p {
     margin: 14px 0;
 }
-
 .inner-content table {
     border-collapse: collapse;
 }
-
 .inner-content td {
     padding: 10px 15px;
     border: 2px solid #000000;
 }
-
 .big-heading {
     margin-top: 55px;
     margin-bottom: 65px;
     text-align: center;
 }
-
 .big-heading h2 {
     position: relative;
     z-index: 2;
@@ -450,7 +277,6 @@ body {
     text-align: center;
     background: #f8f3f0 url("img/pattern-white.jpg") repeat;
 }
-
 .big-heading::after {
     content: "";
     position: relative;
@@ -459,19 +285,16 @@ body {
     display: block;
     border-bottom: 2px solid #000000;
 }
-
 .custom-list-1 {
     margin: 14px 0;
     padding: 0;
     list-style: none;
 }
-
 .custom-list-1 li {
     position: relative;
     margin-bottom: 15px;
     padding-left: 20px;
 }
-
 .custom-list-1 li::before {
     content: "";
     position: absolute;
@@ -482,95 +305,77 @@ body {
     background-color: #000000;
     transform: rotate(45deg);
 }
-
 .price-table {
     width: 100%;
 }
-
 .price-table td {
     width: 50%;
 }
-
 .price-table td:last-child {
     text-align: center;
 }
-
 .short-text {
     padding-right: 80px;
 }
-
 .inner-columns {
     margin: 60px 0;
 }
-
 .inner-column-left,
 .inner-column-right {
     width: 460px;
 }
-
 .inner-column-left {
     float: left;
 }
-
 .inner-column-right {
     float: right;
 }
 
-
 /* у каждого первого тега в кахдой колонке убираем верхний отступ  */
-
 .inner-column-left *:first-child,
 .inner-column-right *:first-child {
     margin-top: 0;
 }
 
-
 /* в каждой колонке у последнего убираем нижний отступ  */
-
 .inner-column-left *:last-child,
 .inner-column-right *:last-child {
     margin-bottom: 0;
 }
-
 .main-footer {
     margin-top: 65px;
     padding-top: 60px;
     padding-bottom: 40px;
     color: #fff;
     background: #252525 url(../img/footer_bg.jpg);
+    box-shadow: inset 0px 30px 40px -15px #000;
 }
-
 .footer-contact {
     float: left;
     width: 320px;
     margin-right: 60px;
 }
-
 .footer-contact a {
     color: #fff;
 }
-
 .footer-contact a:hover {
     text-decoration: none;
 }
-
 .footer-social {
     float: left;
     width: 180px;
     /* border: 1px solid rgb(153, 255, 0); */
+    
     text-align: center;
 }
-
 .footer-copyright {
     float: right;
     max-width: 180px;
 }
-
 .footer-social p {
     margin: 0;
     margin-bottom: 15px;
 }
-
 .social-btn {
     display: inline-block;
     width: 43px;
@@ -581,75 +386,35 @@ body {
     text-decoration: none;
     background: #000000 url(../img/sprite.png) no-repeat center;
     /* transition:  background-position 0.5s, background-color 0.5s ; */
+    
     transition: background-color 0.5s;
 }
-
 .social-btn:hover {
     background-color: #fff;
 }
-
 .social-btn-vk {
     background-position: 9px -60px;
 }
-
 .social-btn-fb {
     background-position: 9px -132px;
 }
-
 .social-btn-inst {
     background-position: 9px -97px;
 }
-
 .social-btn-vk:hover {
     background-position: 9px -167px;
 }
-
 .social-btn-fb:hover {
     background-position: 9px -202px;
 }
-
 .social-btn-inst:hover {
     background-position: 9px -237px;
 }
-
 .footer-copyright p {
     margin: 0;
     margin-bottom: 15px;
     text-align: center;
 }
-
 .footer-copyright .btn {
     margin-right: 0;
-}
-
-.footer-copyright .btn:hover {
-    color: #000;
-    background-color: #fff;
-}
-
-
-/* Всплывающая форма */
-
-.modal-content {
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    width: 300px;
-    margin-left: -230px;
-    padding: 50px 80px;
-    color: #000;
-    background: #f8f3f0 url("img/pattern-white.jpg");
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-}
-
-.modal-content-close {
-    position: absolute;
-    top: 0;
-    right: -34px;
-    width: 22px;
-    height: 22px;
-    font-size: 0;
-    background-color: red;
-    border: 0;
-    cursor: pointer;
 }
